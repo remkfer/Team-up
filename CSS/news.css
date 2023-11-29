@@ -1,0 +1,133 @@
+
+.newslist {
+    width: 200px;
+    margin-left: -60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contain{
+    width: 1000px;
+    margin-top: -160px;
+    box-sizing: border-box;
+}
+
+.contain p{
+    font-size: 12px;
+}
+
+.news{
+    margin-top: 150px; 
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+}
+.news h1{
+    margin-left: 90px;
+    text-align: start;
+}
+
+
+.news1, .news2, .news3, .news4 {
+    width: 600px;
+    padding: 10px 40px 20px;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    margin-left: 270px;
+    position: relative;
+}
+.news>div h3{
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #003F6A;
+}
+
+.news2 .tag{
+    background-color: #a4f0de;
+    color: #003F6A;
+}
+
+.news1, .news3{
+    background-color: rgba(232, 246, 255, 0.555);
+    background-image: linear-gradient(to left,transparent 50%, rgb(255, 255, 255));
+}
+
+.news2, .news4{
+    background-color: rgba(232, 246, 255, 0.555);
+    background-image: linear-gradient(to right,transparent 50%, rgb(255, 255, 255));
+}
+
+.time{
+    font-size: 10px;
+    align-self: flex-end;
+}
+
+.tag{
+    font-size: 10px;
+    padding: 3px 8px;
+    background-color: #003F6A;
+    color: white;
+    border-radius: 3px;
+    justify-content: end;
+    position: sticky;
+    margin-top: 20px;
+    margin-right: 410px;
+}
+
+.detail{
+    display: flex;
+    justify-content: space-around;
+}
+
+.pagination{
+    display: flex;
+    justify-content: end;
+    margin-right: 230px;
+    margin-top: 40px;
+}
+
+.pagination ul{
+    display: flex;
+    align-items: center;
+}
+.pagination li{
+   margin: 15px; 
+}
+
+.prev a, .next a{
+    font-size: 10px;
+    padding: 5px 10px;
+    border: 1px solid #003F6A;
+    border-radius: 20px;
+    
+}
+
+/* news hover */
+.news1:hover{
+    background-image: linear-gradient(to right, #eafaff, #ffffff76 50%);
+}
+
+.news3:hover{
+    background-image: linear-gradient(to right, #eafaff, #ffffff76 50%);
+}
+
+.news2:hover{
+    background-image: linear-gradient(to left, #eafaff, #ffffff76 50%);
+}
+
+.news4:hover{
+    background-image: linear-gradient(to left, #eafaff, #ffffff76 50%);
+}
+
+
+/* @keyframes AnimeGrade{
+  0%{
+    background-position: 0% 50%
+  }
+  50%{
+    background-position: 100% 50%
+  }
+  100%{
+    background-position: 0% 50%
+  }
+} */

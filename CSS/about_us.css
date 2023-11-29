@@ -1,0 +1,122 @@
+
+.about_us h1{
+    margin-top: 150px;
+    margin-left: 90px;
+}
+
+.aboutContain {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutContain img{
+    margin: 10px 90px 0px;
+}
+
+.aboutContain p {
+    width: 800px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.founder {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+.description{
+    margin-left: 200px;
+    top: 90px;
+    position: relative;
+}
+
+.description p {
+    width: 350px;
+}
+
+.joe {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 120px;
+}
+
+.founder h3{
+    margin-left: 40px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.founder ul{
+   letter-spacing: 3px;
+}
+
+.hao {
+    margin-top: 50px;
+    margin-left: 80px;
+    top: -30px;
+    position: relative;
+}
+
+/* crew */
+
+.crew{
+    margin-top: 160px;
+    box-sizing: border-box;
+}
+
+.crew h1{
+    display: flex;
+    justify-content: center;
+}
+.slide{
+    display: flex;
+    justify-content: center;
+}
+
+.crewspic{
+    display: flex;
+    align-items: end;
+    margin-top: 20px;
+}
+
+.crewspic img{
+    width: 270px;
+    height: 320px;
+}
+
+.slide img{
+    margin: 5px;
+}
+
+.mid img{
+    width: 310px;
+    height: 360px;
+    
+}
+
+.slide button{
+    width: 20px;
+    /* z-index: 1; */
+    background: none;
+    border: none;
+
+}
+
+.slide button img{
+    width: 50px;
+}
+
+.slide button:first-child{
+    margin-top: 70px;
+    margin-right: 80px;
+}
+
+.slide button:last-child{
+    margin-top: 70px;
+    margin-left: 30px;
+}

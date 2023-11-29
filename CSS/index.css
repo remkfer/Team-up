@@ -1,0 +1,497 @@
+/* 
+font-family: 'Bebas Neue', sans-serif;  h1
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif; 
+font-family: 'Noto Sans TC', sans-serif;  chinese
+*/
+
+h1 {
+    color: #003F6A;
+    font-size: 50px;
+    letter-spacing: 3px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+h2{
+    font-size: 24px;
+    color: #003F6A;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+p,a,span,li {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+/* banner */
+
+.banner img{
+    width: 100%;
+}
+
+.bannertext1{
+    
+    position: absolute;
+    z-index: 1;
+    left: 90px;
+    top:150px;
+}
+
+.bannertext1 h1{
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+
+.bannertext1 span{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    color: #05273d;
+}
+
+.bannertext2{
+    position: absolute;
+    z-index: 1;
+    right: 90px;
+    bottom: 0;
+    text-align: end;
+}
+
+.bannertext2 h1{
+    color: #fff;
+    line-height: 1.5;
+}
+
+.bannertext2 span{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    color: #05273d;
+}
+
+/* news */
+
+.news{
+    width: 822px;
+    background: url(./img/news\ bg.png);
+    background-size: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+
+}
+
+.newslist{
+    display: flex;
+
+}
+
+.newsdt{
+    width: 100px; 
+    font-size: 14px;
+    color: #003F6A;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    
+}
+
+.newslist .tag{
+    width: 50px;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 3px 5px;
+    margin-top: 6px;
+    color: #fff;
+    background-color: #FAB500;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.newslist .date{
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.newsct{
+    width: 480px;
+    margin-left: 30px;
+   
+    
+    
+}
+
+.newslist{
+    line-height: 2;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.news a{
+    color: black;
+    font-size: 14px;
+}
+
+.news1, .news2, .news3, .news4{
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(208, 208, 208);
+}
+
+.news .btn{
+    width: 100px;
+    background-color: #003F6A;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-top: 50px;
+    padding: 8px 20px;
+}
+
+.news .btn a{
+    font-size: 14px;
+    color: #fff;
+    margin: 0 auto;
+}
+
+
+/* 流程 */
+
+.procedure{
+    margin-top: 100px;
+    background-color: #003F6A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400px;
+}
+
+.procedure i{
+    width: 50px;
+    height: 50px;
+    color: #003F6A;
+    background-color: #fff; 
+    border-radius: 100%;
+    padding: 25px 25px 20px;
+    font-size: 40px;
+}
+
+
+.procedure h2{
+    width: 100%;
+    font-weight: 200px;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.pro_name{
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.steps{
+    color: #fff;
+    display: flex;
+}
+
+.pro1, .pro2, .pro3, .pro4, .pro5{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* product */
+
+.product{
+    margin-top: 60px;
+}
+
+.product_list{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+.product h1{
+    display: flex;
+    justify-content: center;
+}
+.product_list img{
+    width: 250px;
+    margin: 30px 20px;
+}
+
+.left_btn button, .right_btn button{
+    padding: 8px 12px; 
+    background-color: rgba(247, 247, 247, 0);
+    border-radius: 100%;
+    font-size: 30px;
+    color: #003F6A;
+    position: absolute;
+    top: 40%;
+    margin: 20px;
+    
+}
+
+.left_btn button{
+    margin-left: -60px;
+}
+
+.product_list button{
+    background-color: #ffffff00;
+    border: none;
+}
+
+.tops_link{
+    position: relative;
+}
+
+.tops_link:hover::after{
+    position: absolute;
+    background-color: #313131;
+    opacity: 0.5;
+    content : "排球衣";
+    width: 250px;
+    height: 250px;
+    bottom: 40px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #ffffff;
+ }   
+
+.bottoms_link{
+    position: relative;
+}
+
+.bottoms_link:hover::after{
+    position: absolute;
+    content : "排球褲";
+    width: 250px;
+    height: 250px;
+    background-color: #313131;
+    opacity: 0.5;
+    color: #ffffff;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 20px;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-family: 'Noto Sans TC', sans-serif;
+    
+    
+}
+
+.socks_link{
+    position: relative;
+}
+
+.socks_link:hover::after{
+    position: absolute;
+    content : "排球襪";
+    width: 250px;
+    height: 250px;
+    background-color: #313131;
+    opacity: 0.5;
+    color: #ffffff;
+    bottom: 40px;
+    left: 20px;
+    font-size: 40px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 3px;
+    font-family: 'Noto Sans TC', sans-serif;
+    
+}
+
+
+
+/* about us */
+
+.ourTeam{
+    display: flex;
+    justify-content: center;
+}
+
+.index_aboutus{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.index_aboutus img{
+    width: 500px;
+
+}
+.intro h1{
+margin-left: 40px;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+}
+
+.ourTeam p{
+    width: 400px;
+    padding-left: 40px;
+    line-height: 2;
+}
+
+.viewmore{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+
+.viewmore a{
+    font-size: 12px;
+    background-color: #003F6A;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+}
+
+/* 頁面連結 */
+
+.link_list{
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.link_list img{
+    
+    width: 250px;
+    margin: 20px;
+}
+
+.link_list a:hover{
+    opacity: 0.8;
+}
+
+.linkToCourt{
+    position: relative;
+}
+
+.linkToCourt:hover::after{
+    position: absolute;
+    content : "場地";
+    width: 250px;
+    color: #ffffff;
+    bottom: 120px;
+    left: 95px;
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.linkToRules{
+    position: relative;
+}
+
+.linkToRules:hover::after{
+    position: absolute;
+    content : "規範";
+    width: 250px;
+    color: #ffffff;
+    bottom: 120px;
+    left: 95px;
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.linkToTips{
+    position: relative;
+}
+
+.linkToTips:hover::after{
+    position: absolute;
+    content : "TIPS";
+    width: 250px;
+    color: #ffffff;
+    bottom: 120px;
+    left: 95px;
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-family: 'Noto Sans TC', sans-serif;
+    
+}
+
+/* loading動畫 */
+
+.loading img{
+    position: absolute;
+    width: 300px;
+    top: 48%;
+    right: 37%;
+    margin: 0 auto;
+    
+    animation: circle infinite 3s linear;
+}
+
+.preload{
+    position: fixed;
+    z-index: 888;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+@keyframes circle{
+    0% {
+      /* opacity: 0.8; */
+    }
+    
+    50% {
+        scale: 1.5;
+        /* opacity: 0.4; */
+    }
+
+    100% {
+        scale: 2;
+        /* opacity: 0; */
+    }
+  }

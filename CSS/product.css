@@ -1,0 +1,246 @@
+/* 用grid */
+
+.side {
+    width: 200px;
+    position: sticky;
+    margin-top: 160px;
+    right: 0;
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.side span{
+    font-size: 12px;
+    font-weight:500;
+    margin-top: 30px;
+    line-height: 1;
+}
+
+.price span{
+    font-size: 16px;
+    color: #003F6A;
+    font-weight: 600;
+    
+}
+
+.price{
+    margin-top: 40px;
+}
+
+.sizeGuide{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.sizeGuide span:first-child{
+    margin-right: 120px;
+}
+
+.sizeGuide span a{
+    font-size: 10px;
+}
+
+.side select{
+    width: 200px;
+    font-size: 12px;
+    padding: 10px;
+    border: none;
+    background-color: #F4F9FF;
+    padding: 3px;
+    margin-top: 5px;
+}
+
+.addToCart{
+    display: flex;
+    margin-left: 17px;
+}
+
+.addToCart button{
+    width: 20px;
+}
+
+.addToCart img{
+    width: 20px;
+}
+
+.num{
+    margin: 30px 50px;
+}
+
+.addToCart_btn button{
+    font-size: 12px;
+    color: #003F6A;
+    font-weight: 600;
+    padding: 8px;
+    width: 200px;
+    background-color: #A5C2F5;
+}
+
+.detail{
+    width: 500px;
+}
+
+/* 尺寸表 */
+table{
+    width: 480px;
+    border: 1px solid #003F6A;
+    border-collapse: collapse;
+}
+
+.title{
+    display: flex;
+}
+
+.title h4{
+    margin-right: 10px;
+}
+
+.title span{
+    margin-top: 16px;
+    font-size: 12px;
+}
+
+table tr{
+    width: 3px;
+}
+
+th{
+    font-size: 12px;
+    border-right: 1px solid black;
+    padding: 3px 0px;
+}
+td{
+    width: 30px;
+    border-collapse: collapse;
+    text-align: center;
+    border-right: 1px solid black;
+    border-top: 1px solid #003F6A;
+    font-size: 12px;
+    padding: 5px 0px;
+}
+
+
+.sizeGuide{
+    display: flex;
+    /* justify-content: space-around; */
+    
+}
+
+.mainarea{
+    display: flex;
+    flex-direction: column;
+}
+
+.breadcrumbs{
+    margin-top: 120px;
+    margin-left: 90px;
+    margin-bottom: 30px;
+}
+.product_contain{
+    display: flex;
+    /* flex-direction: column; */
+    width: 710px;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
+
+.product_information p{
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.size_guide{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.product_photo{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    margin-left: 90px;
+
+}
+
+.mainPic{
+    margin-left: 20px;
+}
+
+
+.morePic img{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.morePic i{
+    color: #003F6A;
+}
+
+.morePic button{
+    background-color: white;
+    border: none;  
+    position: absolute;
+    left: 207px;
+}
+
+
+.description{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 295px;
+}
+
+.detail p{
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+
+/* 推薦商品 */
+
+.recommend{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-left: 247px; */
+    margin-top: 100px;
+    background-color: #E9F2FF;
+}
+
+.recommend h3{
+    /* margin-left: 210px; */
+    margin-bottom: 32px;
+    padding-top: 30px;
+}
+
+.recommend .list{
+    display: flex;
+}
+
+.recommend .list img{
+    width: 200px;
+    margin: 6px;
+    padding-top:10px;
+    padding-bottom: 60px;
+}
+
+.recommend .list button img{
+    width: 30px;
+}
+
+ button{
+    background-color: #fFF;
+    border: none;
+}
+
+.recommend button{
+    margin: 40px;
+    background-color: #E9F2FF;
+}
