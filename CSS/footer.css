@@ -41,7 +41,11 @@
     font-size: 26px;
     margin-right: 5px;
     flex-direction: row-reverse;
-    
+    justify-items: end;
+}
+
+.social_media>div{
+    align-self: flex-end;
 }
 
 .copyright{
