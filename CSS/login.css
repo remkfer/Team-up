@@ -67,6 +67,12 @@
     border-radius: 3px;
 }
 
+.login_btn a:last-child{
+    border: 1px solid #003F6A;
+    background-color: #fff;
+    color: #003F6A;
+}
+
 .password input{
     width: 197px;
 }
