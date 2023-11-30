@@ -1,8 +1,6 @@
-/* 用grid */
 
 .side {
     width: 200px;
-    position: sticky;
     margin-top: 160px;
     right: 0;
     margin-left: 90px;
@@ -105,21 +103,23 @@ table{
 
 table tr{
     width: 3px;
+    font-family: 'Roboto', sans-serif;
 }
 
 th{
     font-size: 12px;
-    border-right: 1px solid black;
-    padding: 3px 0px;
+    border-right: 1px solid #003F6A;
+    padding: 5px 0px;
 }
 td{
     width: 30px;
     border-collapse: collapse;
     text-align: center;
-    border-right: 1px solid black;
+    border-right: 1px solid #003F6A;
     border-top: 1px solid #003F6A;
     font-size: 12px;
     padding: 5px 0px;
+    
 }
 
 
