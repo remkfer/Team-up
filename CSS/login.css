@@ -70,3 +70,14 @@
 .password input{
     width: 197px;
 }
+
+.login_password{
+    position: relative;
+}
+
+.hidepassword img{
+    width: 14px;
+    position: absolute;
+    right: 300px;
+    top: 54%;
+}
