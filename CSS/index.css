@@ -33,8 +33,41 @@ a {
     color: black;
 }
 
+/* menu */
 
+/* .menu a{
+    display: n;
+}
 
+.menu a:hover{
+    overflow: visible;
+} */
+
+.submenu ul{
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+}
+
+.submenu li a{
+    border: none;
+}
+
+.submenu{
+    display: none;
+    
+}
+
+/* .menu:hover .submenu{
+   
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    
+    background-color: gold;
+    color: #05273d;
+    z-index: 99;
+} */
 
 
 

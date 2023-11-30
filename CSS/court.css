@@ -189,3 +189,19 @@ span{
    background-color: #fff;
 }
 
+
+/* hover秀圖 */
+
+/* .showPic {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+.pinA a:hover .showPic img{
+    display: block;
+    position: relative;
+}
+ */
