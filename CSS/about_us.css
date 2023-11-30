@@ -10,12 +10,14 @@
 }
 
 .aboutContain img{
-    margin: 10px 90px 0px;
+    margin: 10px 90px 40px;
 }
+
+
 
 .aboutContain p {
     width: 800px;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     margin-left: auto;
     margin-right: auto;
     text-align: center;
