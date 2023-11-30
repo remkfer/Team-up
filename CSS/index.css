@@ -274,8 +274,7 @@ a {
 
 .tops_link:hover::after{
     position: absolute;
-    background-color: #313131;
-    opacity: 0.5;
+    background-color: rgba(74, 74, 74, 0.4);
     content : "排球衣";
     width: 250px;
     height: 250px;
@@ -300,8 +299,7 @@ a {
     content : "排球褲";
     width: 250px;
     height: 250px;
-    background-color: #313131;
-    opacity: 0.5;
+    background-color: rgba(74, 74, 74, 0.4);
     color: #ffffff;
     bottom: 40px;
     display: flex;
@@ -325,8 +323,7 @@ a {
     content : "排球襪";
     width: 250px;
     height: 250px;
-    background-color: #313131;
-    opacity: 0.5;
+    background-color: rgba(74, 74, 74, 0.4);
     color: #ffffff;
     bottom: 40px;
     left: 20px;
