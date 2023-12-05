@@ -33,16 +33,18 @@
    }
 
 .login_form input{
+    width: 195px;
     margin: 13px;
     border: none;
+    text-align: left;
     border-bottom: 1px solid #003F6A;
-    
+    outline: none; /*拿掉輸入框線*/
 }
 
 .forgetpw{
-    
     display: flex;
     justify-content: end;
+    margin-right: 25px;
 }
 
 .forgetpw a{
@@ -81,9 +83,6 @@
     position: relative;
 }
 
-.hidepassword img{
+.password img{
     width: 14px;
-    position: absolute;
-    right: 300px;
-    top: 54%;
 }

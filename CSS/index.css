@@ -196,15 +196,17 @@ a {
     background-color: #003F6A;
     display: flex;
     margin: 0 auto;
-    border-radius: 15px;
+    border-radius: 5px;
     margin-top: 50px;
-    padding: 8px 20px;
+    
 }
 
 .news .btn a{
-    font-size: 14px;
+    font-size: 12px;
     color: #fff;
     margin: 0 auto;
+    padding: 6px 15px;
+    
 }
 
 
@@ -321,10 +323,13 @@ a {
     letter-spacing: 3px;
     font-family: 'Noto Sans TC', sans-serif;
     color: #ffffff;
+    pointer-events: none;
  }   
 
 .bottoms_link{
     position: relative;
+    
+   
 }
 
 .bottoms_link:hover::after{
@@ -333,16 +338,17 @@ a {
     width: 250px;
     height: 250px;
     background-color: rgba(74, 74, 74, 0.4);
-    color: #ffffff;
-    bottom: 40px;
+    color: #ffffff; 
     display: flex;
     align-items: center;
     justify-content: center;
+    bottom: 40px;
     left: 20px;
     font-size: 40px;
     font-weight: 500;
     letter-spacing: 3px;
     font-family: 'Noto Sans TC', sans-serif;
+    pointer-events: none;
 }
 
 .socks_link{
@@ -365,7 +371,7 @@ a {
     justify-content: center;
     letter-spacing: 3px;
     font-family: 'Noto Sans TC', sans-serif;
-    
+    pointer-events: none;
 }
 
 
@@ -413,7 +419,7 @@ a {
     font-size: 12px;
     background-color: #003F6A;
     color: #fff;
-    padding: 10px 20px;
+    padding: 6px 15px;
     border-radius: 5px;
     
 }
@@ -427,8 +433,7 @@ a {
 }
 
 .link_list img{
-    
-    width: 250px;
+    width: 285px;
     margin: 20px;
 }
 
@@ -445,12 +450,13 @@ a {
     content : "場地";
     width: 250px;
     color: #ffffff;
-    bottom: 120px;
-    left: 95px;
+    bottom: 140px;
+    left: 108px;
     font-size: 48px;
     font-weight: 500;
     letter-spacing: 3px;
     font-family: 'Noto Sans TC', sans-serif;
+    pointer-events: none;
 }
 
 .linkToRules{
@@ -462,12 +468,13 @@ a {
     content : "規範";
     width: 250px;
     color: #ffffff;
-    bottom: 120px;
-    left: 95px;
+    bottom: 140px;
+    left: 108px;
     font-size: 48px;
     font-weight: 500;
     letter-spacing: 3px;
     font-family: 'Noto Sans TC', sans-serif;
+    pointer-events: none;
 }
 
 .linkToTips{
@@ -476,15 +483,16 @@ a {
 
 .linkToTips:hover::after{
     position: absolute;
-    content : "TIPS";
+    content : "技巧";
     width: 250px;
     color: #ffffff;
-    bottom: 120px;
-    left: 95px;
+    bottom: 140px;
+    left: 108px;
     font-size: 48px;
     font-weight: 500;
     letter-spacing: 3px;
     font-family: 'Noto Sans TC', sans-serif;
+    pointer-events: none;
 }
 
 /* loading動畫 */

@@ -34,7 +34,7 @@
     margin: 13px;
     border: none;
     border-bottom: 1px solid #003F6A;
-    
+    outline: none;
 }
 
 
@@ -62,4 +62,8 @@
 
 .confirm input{
     width: 160px;
+}
+
+.password img, .confirm img{
+    width: 14px;
 }
