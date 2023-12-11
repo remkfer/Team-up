@@ -39,24 +39,21 @@
                     </div> 
                     <div class="linkicon">
                         <ul>
-
                             <li><a href="./shop.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-
                             <li><a href="./login.html"><i class="fa-regular fa-user"></i></a></li>
-
-                            <div class="menu">
-                                <li><a href=""><i class="fa-solid fa-bars"></i></a></li>
-                                <div class="submenu">
-                                    <ul>
-                                        <li><a href="">關於我們</a></li>
-                                        <li><a href="">場館資訊</a></li>
-                                        <li><a href="">排球tips</a></li>
-                                        <li><a href="">最新消息</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
+                            <li><i class="fa-solid fa-bars"  id="menu" onclick="toggleMenu()"></i></li>
                         </ul>
+                    </div>
+                        <div class="menu">
+                            <div class="submenu" id="subMenu">
+                                <ul>
+                                    <li><a href="./about_us.html" class="subMenuLink"><p>關於我們</p><span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                    <li><a href="./court.html" class="subMenuLink"><p>場館資訊</p><span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                    <li><a href="./skill.html" class="subMenuLink"><p>排球技巧</p><span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                    <li><a href="./news.html" class="subMenuLink"><p>最新消息</p><span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                </ul>
+                            </div>
+                         
                     </div>
                 </div>
             </div>
@@ -90,11 +87,13 @@
                     <span class="tag">臨打場</span>
                 </div>
                 <div class="newsct">
-                    <a href="./news_page.html">
+                    <img src="./img/NEWS1.jpg" alt="新聞圖">
+                    <div class="content">
+                        <h4>新晉排球天才崛起，19歲少年成為球壇新星</h4>
                         <p>11/10(五) 15:45-18:45開放女網混排臨打場，兩人同行，第二人只要100元，女生參加女網場次，每人再減10元!
-
                         </p>
-                    </a>
+                    </div>
+                    
                 </div>   
             </div>
             <div class="news2">
@@ -104,9 +103,13 @@
                     </span>
                 </div>
                 <div class="newsct">
-                    <a href="./news_page.html">
+                    <img src="./img/NEWS2.jpg" alt="新聞圖">
+                    <div class="content">
+                        <h4>11/20 16:00-18:00開放臨打場</h4>
                         <p>1.在臉書或 IG 貼文 Like本篇貼文2.留言＠兩個朋友揪他一起來打球3.轉發這則貼文到限時動態，保留24小時後截圖。</p>
-                    </a>
+                    </div>
+                    
+
                 </div>
             </div>
             <div class="news3">
@@ -117,21 +120,67 @@
                         </span>
                 </div>
                 <div class="newsct">
-                    <a href="./news_page.html">
+                    <img src="./img/NEWS3.jpg" alt="新聞圖">
+                    <div class="content">
+                        <h4>球館於11/30舉辦比賽</h4>
                         <p>
                         請準時抵達球館，以維護所有球友打球權益，且務必將垃圾帶離球場，保持公共清潔。若於場次開始3小時前，未滿12人則流團改自由用場。
-                    </p>
-                    </a> 
-                        
-                </div>
-                
+                        </p>
+                    </div>
+                    
+                    
+                </div>  
             </div>
             <div class="btn">
-                <a href="./news.html">更多消息</a>
+                    <a class="button button-color" href="./news.html"><span class="button-name">更多消息</span><i class="button-icon fa fa-arrow-right"></i></a>
             </div>
         </div>
     </div>
-
+            <!-- <div class="news">
+                <div class="title">
+                    <h1>NEWS</h1>
+                </div>
+                <div class="newslist">
+                    <div class="news1">
+                        <div class="newsct">
+                            <img src="./img/NEWS1.jpg" alt="新聞圖">
+                        </div>   
+                        
+                        <div class="newsdt">
+                            <h3>新晉排球天才崛起，19歲少年成為球壇新星</h3>
+                            <span class="date">2023.11.06</span>
+                            <span class="tag">臨打場</span>
+                        </div>
+                    </div>
+                    <div class="news2">
+                        <div class="newsct">
+                            <img src="./img/NEWS2.jpg" alt="新聞圖">
+                        </div>   
+                        
+                        <div class="newsdt">
+                            <h3>11/20 16:00-18:00開放臨打場</h3>
+                            <span class="date">2023.11.06</span>
+                            <span class="tag">臨打場</span>
+                        </div>
+                    </div>
+                    <div class="news3">
+                        <div class="newsct">
+                            <img src="./img/NEWS3.jpg" alt="新聞圖">
+                        </div>   
+                        
+                        <div class="newsdt">
+                            <h3>球館於11/30舉辦比賽</h3>
+                            <span class="date">2023.11.06</span>
+                            <span class="tag">臨打場</span>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <a href="./news.html">更多消息</a>
+                    </div>
+                </div>
+            </div> -->
+        
+        
     <div class="procedure">
         <div class="title">
             <h2>報隊流程</h2>
@@ -156,7 +205,7 @@
                 </div>
             </div>
             <div class="pro4">
-                <i class="fa-solid fa-restroom"></i>
+                <i class="fa-solid fa-check"></i>
                 <div class="pro_name">
                     <span>選擇類型</span>
                 </div>
@@ -171,6 +220,7 @@
         
     </div>
     
+    
     <div class="product">
         <div class="title">
             <h1>PRODUCT</h1>
@@ -184,16 +234,22 @@
             </div>
 
             <div class="tops_link">
+                <div class="tag"><span>排球衣</span>
+                </div>
                 <a href="./shop.html">
                     <img src="./img/list_top.png" alt="排球衣">
                 </a>
             </div>
             <div class="bottoms_link">
+                <div class="tag"><span>排球褲</span>
+                </div>
                 <a href="./shop.html">
                     <img src="./img/list_bottom.png" alt="排球褲">
                 </a>
             </div>
             <div class="socks_link">
+                <div class="tag"><span>排球襪</span>
+                </div>
                 <a href="./shop.html">
                     <img src="./img/list_socks.png" alt="排球襪">
                 </a>
@@ -208,17 +264,17 @@
     
 
     <div class="index_aboutus">
-        <div class="img">
-                <img src="./img/portrait.png" alt="teamup團隊">
-        </div>
         <div class="ourTeam">
-            
+            <img src="./img/portrait.png" alt="teamup團隊">
             <div class="intro">
                 <h1>ABOUT US</h1>
                 <p>我們希望能讓更多人認識、喜愛排球，並提供球友們一個更方便的預約報隊平台，在這裡你可以找到更多志同道合的夥伴，一起創造排球人的共好空間。 </p>
                 <div class="viewmore">
                 <a href="./about_us.html">View more</a>
                 </div>
+                <!-- <div class="btn">
+                    <a class="button button-color" href="./about_us.html"><span class="button-name">View More</span><i class="button-icon fa fa-arrow-right"></i></a>
+                </div> -->
             </div>
     
         </div>
@@ -262,6 +318,7 @@
   src="https://code.jquery.com/jquery-3.7.1.js"
   integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
   crossorigin="anonymous"></script>
+  <script src="./JS/nav_menu.js"></script>
         <script>
             setTimeout(function(){
                 $('.preload').fadeToggle();

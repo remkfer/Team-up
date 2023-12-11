@@ -1,6 +1,6 @@
 #navbar {
     width: 100%;
-    height: 110px;
+    height: 8vw;
     display: flex;
     align-items: center;
     align-self: center;
@@ -15,13 +15,13 @@
 /* 改 11/19 約13:35 */
 
 .logo img{
-    width: 150px;
-    margin-left: 90px;
+    width: 11vw;
+    margin-left: 6.8vw;
 }
 
 .navlist{
     display: flex;
-    margin-right: 90px;
+    margin-right: 7vw;
 }
 
 .navlist .link{
@@ -29,7 +29,6 @@
 }
 
 nav ul{
-    font-size: 14px;
     display: flex;
 }
 
@@ -45,11 +44,13 @@ nav ul{
 
 
 .link a{
+    font-size: 1vw;
     color: #003F6A;
     padding: 6px 15px;
     border: 1px solid #003F6A;
     border-radius: 5px;
     margin: 8px;
+    transition: 1s;
 }
 
 .link a:hover{
@@ -64,6 +65,7 @@ nav ul{
     align-self: center;
     text-align: center;
     margin: 8px;
+    transition: 1s;
 }
 
 .linkicon a:hover{

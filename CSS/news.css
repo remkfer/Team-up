@@ -1,5 +1,5 @@
 
-.newslist {
+/* .newslist {
     width: 200px;
     margin-left: -60px;
     display: flex;
@@ -77,12 +77,134 @@
 .detail{
     display: flex;
     justify-content: space-around;
+} */
+
+/* news */
+
+.news{
+    width: 90%;
+    background: url(./img/news\ bg.png);
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 120px;
+    align-items: center;
+    /* border: 1px solid red; */
 }
+
+.list ul{
+    display: flex;
+    margin-bottom: 2vw;
+}
+
+.list li a{
+    font-size: 1vw;
+    color: #003F6A;
+    padding: 0 5vw;
+
+}
+
+.news img{
+    width: 35%;
+}
+
+.newslist{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.newsdt{
+    width: 8vw; 
+    font-size: 14px;
+    color: #003F6A;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2vw;
+}
+
+
+
+.newslist .tag{
+    width: 5vw;
+    font-size: 0.7vw;
+    font-weight: 400;
+    padding: 3px 5px;
+    margin-top: 6px;
+    color: #fff;
+    background-color: #FAB500;
+    border-radius: 3px;
+    text-align: center;
+    
+}
+
+.newslist .date{
+    font-size: 0.9vw;
+    margin-right: 1vw;
+}
+
+.newsct{
+    display: flex;
+    /* width: 50vw; */
+}
+
+.newsct .content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.5vw;
+    /* border: 1px solid red; */
+}
+
+.newsdt h4 {
+    margin-left: 3vw;
+}
+
+.newsct p{
+    width: 25vw;
+    font-size: 0.9vw;
+}
+
+.newslist{
+    line-height: 2;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+/* .news a{
+    color: black;
+    font-size: 14px;
+} */
+
+.news1, .news2, .news3, .news4{
+    display: flex;
+    padding: 3vw 0;
+    border-bottom: 1px solid rgb(208, 208, 208);
+}
+
+/* .news .btn{
+    background-color: #003F6A;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 50px;
+} */
+
+.news .btn a{
+    font-size: 1vw;
+    color: #fff;
+    margin: 0 auto;
+    padding: 0.5vw 3vw;
+}
+
 
 .pagination{
     display: flex;
-    justify-content: end;
-    margin-right: 230px;
+    align-items: center;
     margin-top: 40px;
 }
 
@@ -92,18 +214,19 @@
 }
 .pagination li{
    margin: 15px; 
+   padding: 0 0.5vw;
 }
 
 .prev a, .next a{
     font-size: 10px;
-    padding: 5px 10px;
+    padding: 5px 15px;
     border: 1px solid #003F6A;
-    border-radius: 20px;
+    border-radius: 5px;
     
 }
 
 /* news hover */
-.news1:hover{
+/* .news1:hover{
     background-image: linear-gradient(to right, #eafaff, #ffffff76 50%);
 }
 
@@ -117,7 +240,7 @@
 
 .news4:hover{
     background-image: linear-gradient(to left, #eafaff, #ffffff76 50%);
-}
+} */
 
 
 /* @keyframes AnimeGrade{
@@ -131,3 +254,64 @@
     background-position: 0% 50%
   }
 } */
+
+
+/* 小於768px */
+@media screen and (max-width:768px) {
+    .newslist{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+        text-align: center;
+        margin: 0 auto;
+        /* border: 1px solid red; */
+    }
+    
+    .news1, .news2, .news3, .news4{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border: 1px solid rgb(0, 76, 255); */
+    }
+
+    .newsct{
+        display: flex;
+        flex-direction: column;
+        align-items: center;order: -1;
+    }
+
+    .newsct img{
+        width: 70%;
+    }
+
+    .newsct h4{
+        width: 100%;
+    }
+
+    .newsct p{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .newsdt{
+        width: 60%;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        border: 1px solid green;
+        margin-top: 2vw;
+    }
+
+    .newsdt .date, .newsdt .tag{
+        /* display: inline; */
+        /* border: 1px solid ; */
+    }
+
+
+   
+}
+
+
+/* 改成選單上方 左右滑 或增加改變排列鍵*/

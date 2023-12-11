@@ -14,62 +14,82 @@
 }
 
 
-
 .aboutContain p {
-    width: 800px;
-    /* margin-top: 40px; */
+    width: 60%;
+    font-size: 1vw;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
+
+/* founder */
+
 .founder {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 1vw;
     position: relative;
 }
 
 .description{
-    margin-left: 200px;
-    top: 90px;
+    margin-left: 16vw;
+    top: 10vw;
     position: relative;
 }
 
 .description p {
-    width: 350px;
+    width: 30vw;
+    font-size: 1vw;
+    margin-bottom: 3vw;
 }
 
 .joe {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 110px;
-    left: 60px;
+    top: 10vw;
+    /* left: 5vw; */
+    margin-left: 16vw;
+    margin-right: 3vw;
 }
 
+
 .founder h3{
-    margin-left: 40px;
-    margin-bottom: 30px;
+    margin-left: 2vw;
+    margin-bottom: 1.5vw;
     margin-top: 20px;
 }
 
 .founder ul{
-   letter-spacing: 3px;
+    font-size: 1vw;
+    letter-spacing: 3px;
+}
+
+.founder li{
+    font-size: 1vw;
 }
 
 
 .hao {
-    margin-top: 30px;
-    margin-left: 80px;
-    top: -30px;
+    margin-right: 16vw;
+    margin-top: 3vw;
+    /* margin-left: 10vw; */
     position: relative;
 }
+
+.pics img{
+    width: 30vw;
+}  
+
 
 /* crew */
 
 .crew{
-    margin-top: 160px;
+    margin: 0 auto;
+    /* margin-top: 160px; */
+    margin-top: 16vw;
+    justify-content: center;
     box-sizing: border-box;
 }
 
@@ -85,44 +105,34 @@
 .crewspic{
     display: flex;
     align-items: end;
-    margin-top: 20px;
+    justify-content: center;
 }
 
 .crewspic img{
-    width: 270px;
-    height: 320px;
-}
-
-.slide img{
-    margin: 5px;
+    width: 22vw;
+    padding: 0.6vw;
 }
 
 .mid img{
-    width: 310px;
-    height: 360px;
-    
+    width: 24vw;
 }
 
 .slide button{
-    width: 20px;
     background: none;
     border: none;
-
 }
 
 .slide button img{
-    width: 50px;
+    width: 4.5vw;
 }
 
-.slide button:first-child{
-    margin-top: 70px;
-    margin-right: 80px;
+.crew .btn{
+    display: flex;
+    align-items: center;
+    margin: 4vw 2.5vw 0;
 }
 
-.slide button:last-child{
-    margin-top: 70px;
-    margin-left: 30px;
-}
+
 
 /* hover換照片動畫 */
 
@@ -142,8 +152,44 @@
      /* opacity:0;
 } */ 
 
-.pics img{
-    width: 409px;
-    height: 474px;
-    margin-right: 40px;
-}  
+
+
+
+@media screen and (max-width: 768px) {
+    .about_us h1{
+        font-size: clamp(16px,4vw,40px);
+    }
+
+    p {
+        font-size: clamp(12px,1vw,18px);
+    }
+
+    .aboutContain img{
+        width: 100%;
+    }
+
+    .description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description p{
+        width: 60%;
+        text-align: center;
+        margin-bottom: 12vw;
+    }
+
+    .founder {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .joe {
+        display: flex;
+    }
+
+    .hao{
+        display: flex;
+    }
+}

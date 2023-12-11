@@ -5,9 +5,9 @@ font-family: 'Ubuntu', sans-serif;
 font-family: 'Noto Sans TC', sans-serif;  chinese
 */
 
-h1 {
+/* h1 {
     color: #003F6A;
-    font-size: 50px;
+    font-size: 6vw;
     letter-spacing: 3px;
     font-family: 'Bebas Neue', sans-serif;
 }
@@ -32,125 +32,100 @@ a {
     text-decoration: none;
     color: black;
 }
-
-/* menu */
-
-/* .menu a{
-    display: n;
-}
-
-.menu a:hover{
-    overflow: visible;
-} */
-
-.submenu ul{
-    display: flex;
-    flex-direction: column;
-    width: 900px;
-}
-
-.submenu li a{
-    border: none;
-}
-
-.submenu{
-    display: none;
-    
-}
-
-/* .menu:hover .submenu{
-   
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    
-    background-color: gold;
-    color: #05273d;
-    z-index: 99;
-} */
-
+*/
 
 
 /* banner */
+
+.banner {
+    position: relative;
+}
 
 .banner img{
     width: 100%;
 }
 
 .bannertext1{
-    
     position: absolute;
     z-index: 1;
-    left: 90px;
-    top:150px;
+    left: 7vw;
+    top: 11vw;
 }
 
 .bannertext1 h1{
     color: #fff;
     letter-spacing: 3px;
-    line-height: 1.5;
+    line-height: 1.3;
+    font-size: 2.5vw;
 }
 
 .bannertext1 span{
+    font-size: 3vw;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 40px;
     color: #05273d;
 }
 
 .bannertext2{
     position: absolute;
     z-index: 1;
-    right: 90px;
-    bottom: 0;
+    right: 7vw;
+    bottom: 2vw;
     text-align: end;
 }
 
 .bannertext2 h1{
     color: #fff;
-    line-height: 1.5;
+    line-height: 1.3;
+    font-size: 2.5vw;
 }
 
 .bannertext2 span{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 40px;
     color: #05273d;
+    font-size: 3vw;
 }
 
 /* news */
 
 .news{
-    width: 822px;
+    width: 85%;
     background: url(./img/news\ bg.png);
     background-size: 100%;
-    
     display: flex;
     flex-direction: column;
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    margin-top: 4vw;
     align-items: center;
+    /* border: 1px solid red; */
+}
 
+.news img{
+    width: 35%;
 }
 
 .newslist{
+    width: 65%;
     display: flex;
-
+    flex-direction: column;
+    /* border: 1px solid red; */
 }
 
 .newsdt{
-    width: 100px; 
+    width: 8vw; 
     font-size: 14px;
     color: #003F6A;
     font-weight: 500;
     display: flex;
     flex-direction: column;
-    margin-top: 16px;
-    
+    margin-right: 2vw;
 }
 
+
+
 .newslist .tag{
-    width: 50px;
-    font-size: 10px;
+    width: 5vw;
+    font-size: 0.7vw;
     font-weight: 400;
     padding: 3px 5px;
     margin-top: 6px;
@@ -158,19 +133,33 @@ a {
     background-color: #FAB500;
     border-radius: 3px;
     text-align: center;
+    
 }
 
 .newslist .date{
-    font-size: 12px;
-    margin-right: 10px;
+    font-size: 0.9vw;
+    margin-right: 1vw;
 }
 
 .newsct{
-    width: 480px;
-    margin-left: 30px;
-   
-    
-    
+    display: flex;
+    width: 50vw;
+}
+
+.newsct .content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.5vw;
+    /* border: 1px solid red; */
+}
+
+.newsdt h4 {
+    margin-left: 3vw;
+}
+
+.newsct p{
+    width: 25vw;
+    font-size: 0.9vw;
 }
 
 .newslist{
@@ -180,40 +169,83 @@ a {
     
 }
 
-.news a{
+/* .news a{
     color: black;
     font-size: 14px;
-}
+} */
 
 .news1, .news2, .news3, .news4{
     display: flex;
-    padding-bottom: 20px;
+    padding: 3vw 0;
     border-bottom: 1px solid rgb(208, 208, 208);
 }
 
-.news .btn{
-    width: 100px;
+/* button */
+
+.btn{
     background-color: #003F6A;
     display: flex;
     margin: 0 auto;
     border-radius: 5px;
     margin-top: 50px;
-    
 }
 
-.news .btn a{
-    font-size: 12px;
+.btn a{
+    font-size: 1vw;
     color: #fff;
     margin: 0 auto;
-    padding: 6px 15px;
-    
+    padding: 0.5vw 3vw;
 }
+
+.button {
+    width: 4vw;
+    height: 2vw; 
+    text-align: center;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    transition: all .2s ease-out 0s;
+  }
+  .button:hover > span {
+    top: -20px;
+    opacity: 0;
+  }
+  .button:hover > i {
+    opacity: 1;
+    font-size: 1vw;
+    top: 50%;
+  }
+  
+  .button-name,
+  .button-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    transition: all .3s ease-out;
+    position: absolute;
+  }
+  
+  .button-name {
+    font-size: 1vw;
+    opacity: 1;
+  }
+  
+  .button-icon {
+    opacity: 0;
+  }
+  
 
 
 /* 流程 */
 
 .procedure{
-    margin-top: 100px;
+    width: 100%;
+    margin-top: 8vw;
     background-color: #003F6A;
     display: flex;
     flex-direction: column;
@@ -223,13 +255,14 @@ a {
 }
 
 .procedure i{
-    width: 50px;
-    height: 50px;
+    width: 3.5vw;
+    height: 3.5vw;
     color: #003F6A;
     background-color: #fff; 
     border-radius: 100%;
-    padding: 25px 25px 20px;
-    font-size: 40px;
+    padding: 2vw 2vw 2vw;
+    font-size: 3.5vw;
+    text-align: center;
 }
 
 
@@ -253,7 +286,7 @@ a {
 }
 
 .pro1, .pro2, .pro3, .pro4, .pro5{
-    width: 200px;
+    width: 15vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -374,6 +407,9 @@ a {
     pointer-events: none;
 }
 
+.product .tag{
+    display: none;
+}
 
 
 /* about us */
@@ -409,6 +445,7 @@ a {
 }
 
 .viewmore{
+    width: 10vw;
     display: flex;
     margin-top: 20px;
     margin-left: 40px;
@@ -416,10 +453,11 @@ a {
 
 
 .viewmore a{
-    font-size: 12px;
+    font-size: 1vw;
     background-color: #003F6A;
     color: #fff;
-    padding: 6px 15px;
+    /* padding: 6px 15px; */
+    padding: 0.5vw 2vw;
     border-radius: 5px;
     
 }
@@ -529,4 +567,148 @@ a {
         scale: 2;
         /* opacity: 0; */
     }
+  }
+
+
+  @media screen and (max-width: 768px) {
+    /* NEWS */
+    .newslist{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+        text-align: center;
+        margin: 0 auto;
+        border: 1px solid red;
+    }
+    
+    .news1, .news2, .news3, .news4{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border: 1px solid rgb(0, 76, 255); */
+    }
+
+    .newsct{
+        display: flex;
+        flex-direction: column;
+        align-items: center;order: -1;
+    }
+
+    .newsct img{
+        width: 80%;
+    }
+
+    .newsct h4{
+        width: 100%;
+    }
+
+    .newsct p{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .newsdt{
+        width: 60%;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        border: 1px solid green;
+        margin-top: 2vw;
+    }
+
+    /* product */
+
+    .product{
+        margin-top: 12vw;
+        width: 100%;
+    }
+    
+    .product .tag{
+        width: 12vw;
+        background-color: #003F6A;
+        position: absolute;
+        top: 3vw;
+        left: 3vw;
+        display: flex;
+        justify-content: center;
+    }
+    .product .tag span{
+        font-size: 1.5vw;
+        color: white;
+        text-align: center;
+        padding: 0.6vw 2vw ;
+        
+    }
+    
+    .tops_link, .bottoms_link, .socks_link, .others_link{
+        position: relative;
+    }
+    
+    .product_list{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+    
+    .product .title h1{
+        font-size: 6vw;
+    }
+    
+    .product img{
+        border: 1px solid #e9e9e9;
+        width: 40vw;
+        margin: 3vw;
+    }
+    
+
+    /* about us */
+
+    .ourTeam{
+        margin: 10vw 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .index_aboutus img{
+        width: 100%;
+    }
+    
+    .index_aboutus h1{
+        font-size: 6vw;
+        text-align: center;
+        margin-top: 7vw;
+    }
+    
+    .intro p{
+        width: 70%;
+        font-size: 2vw;
+        margin: 2vw 0;
+        text-align: center;
+        margin:2vw auto;
+       
+    }
+    
+    .viewmore a{
+        font-size: 2vw;
+        padding: 0.7vw 2.5vw;
+        color: white;
+        background-color: #003F6A;
+        border-radius: 3px;
+    }
+    
+    .viewmore{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 5vw;
+        width: 15vw;
+    }
+
+    .link_list{
+        display: none;
+    }
+    
   }

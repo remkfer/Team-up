@@ -1,6 +1,7 @@
+
 #navbar {
     width: 100%;
-    height: 120px;
+    height: 8vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,21 +13,17 @@
 }
 
 .logo img{
-    width: 200px;
-    margin-left: 90px;
+    width: 15vw;
+    margin-left: 6.8vw;
 }
 
 .navlist{
     display: flex;
-    margin-right: 90px;
+    margin-right: 7vw;
 }
 
-.navlist .link{
-    margin-right: -35px;
-}
 
 nav ul{
-    font-size: 14px;
     display: flex;
 }
 
@@ -37,10 +34,14 @@ nav ul{
 }
 .nav a {
     color: white;
+    font-size: 13px;
+    transition: 1s;
 }
 
 .nav li{
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
 
@@ -72,7 +73,92 @@ nav ul{
     color: #003F6A;
 }
 
+/* menu */
+
+#menu{
+    padding: 10px 12px;
+    color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+
+.menu{
+    /* position: absolute; */
+    top: 100%;
+}
+
+.submenu{
+    width: 60vw;
+    position: relative;
+    background-color: #fff;
+    padding: 1vw;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 13vw;
+    height: 100vh;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+} 
+
+.menu li{
+    /* padding: 3px 10px; */
+    /* border-radius: 50%; */
+}
+
+.submenu ul{
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+}
+
+.submenu li a{
+    border: none;
+    color: #05273d;
+}
+
+/* 展開 */
+.submenu.open-menu{
+    max-height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.subMenuLink{
+    display: flex;
+    align-items: center;
+}
+
+.subMenuLink p{
+    margin-right: 2vw;
+}
+
+.subMenuLink:hover p{
+    font-weight: 500;
+}
+
+
+.subMenuLink span{
+    transition: transform 0.5s;
+}
+
+.subMenuLink:hover span{
+    transform: translateX(5px);
+}
+
+
+
+
+/* nav 捲動變色 */
+
 #navbar.scrolled {
     background-color: rgb(19, 81, 123) /* 滚動時的颜色 */
   }
 
+
+@media screen and (max-width: 768px) {
+    .linkicon{
+        display: none;
+        
+    }
+}
