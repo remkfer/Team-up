@@ -100,6 +100,7 @@ nav ul{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s;
+    border: 1px solid red;
 } 
 
 .menu li{
@@ -110,7 +111,6 @@ nav ul{
 .submenu ul{
     display: flex;
     flex-direction: column;
-    width: 900px;
 }
 
 .submenu li a{

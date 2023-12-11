@@ -298,6 +298,7 @@ a {
 
 .product{
     margin-top: 60px;
+    
 }
 
 .product_list{
@@ -415,6 +416,7 @@ a {
 /* about us */
 
 .ourTeam{
+    
     display: flex;
     justify-content: center;
 }
