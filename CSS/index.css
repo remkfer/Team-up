@@ -579,7 +579,7 @@ a {
         justify-self: center;
         text-align: center;
         margin: 0 auto;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
     
     .news1, .news2, .news3, .news4{
@@ -593,7 +593,8 @@ a {
     .newsct{
         display: flex;
         flex-direction: column;
-        align-items: center;order: -1;
+        align-items: center;
+        order: -1;
     }
 
     .newsct img{
@@ -614,7 +615,6 @@ a {
         display: flex;
         align-items: center;
         margin: 0 auto;
-        border: 1px solid green;
         margin-top: 2vw;
     }
 
