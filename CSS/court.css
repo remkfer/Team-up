@@ -1,47 +1,54 @@
+
+.title h1{
+    font-size: clamp(16px,4vw,32px);
+    margin-left: 7vw;
+}
+
 span{
     font-size: 12px;
 }
 
-.court {
-    margin-left: 90px;
-    margin-top: 250px;
+.court{
+    margin-top: 12vw; 
 }
 
 .location {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
     position: relative;
-    margin-right: 120px;
     margin-bottom: 50px;
+    
 }
 
 .location img{
+    position: relative;
     vertical-align: middle;
-    margin-right: 150px;
-    width:300px;
+    margin-right: 7vw;
+    width: 23vw;
 }
 
 .pin img{
     z-index: 1;
-    width: 20px;
+    width: 1.2vw;
 }
 
 .pinA{
     position: absolute;
-    top: 40px;
-    left: 460px;
+    top: 3.5vw;
+    left: 23vw;
 }
 
 .pinB{
     position: absolute;
-    top: 100px;
-    left: 420px;
+    top: 8.5vw;
+    left: -24vw;
 }
 
 .pinC{
     position: absolute;
-    top: 55px;
-    left: 405px;
+    top: 4.8vw;
+    left: -39vw;
 }
 
 .location li{
@@ -51,32 +58,29 @@ span{
 .locationdt .court_A{
     position: absolute;
     top: 16%;
-    right: 18%;
+    right: 35vw;
 }
 
 .locationdt .court_B{
     position: absolute;
     top: 32%;
-    right: 25%;
+    right: 40vw;
 }
 
 .locationdt .court_C{
     position: absolute;
     top: 48%;
-    right: 16%;
+    right: 35vw;
 }
 
 .location span{
     font-size: 20px;
     color: #003F6A;
     font-weight: 600;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
-
-.court {
-    margin-top: 150px;
-}
+/* info */
 
 .court_information {
     display: flex;
@@ -87,77 +91,58 @@ span{
     display: flex;
 }
 
-.court_information h1{
-    margin-left: 90px;
-
-}
-
-.courtinfo{
-    margin-left: 30px;
-}
-
-.courtinfo h1{
-   margin-top: 20px;
-   margin-left: 0px;
-}
-
-
 .court_information img {
-    width: 400px;
-    
+    width: 31vw;
+    vertical-align: center;
 }
 
 .courtA, .courtB, .courtC{
-    width: 800px;
     display: flex;
     align-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 90px; 
-
+    justify-content: center;
+    margin: 0 auto 7vw;
+    border: 1px solid red;
 }
 
 .courtB{
+    display: flex;
     flex-direction: row-reverse;
 }
 
 .courtB img{
-    width: 400px;
+    width: 31vw;
 }
 
 .courtC img{
-    width: 400px;
+    width: 31vw;
 }
 
 .courtinfo{
-    padding:0px 40px; 
+    padding: 0 5vw; 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     position: relative;
 } 
 
-.courtB .courtinfo {
-       margin-right: 90px;
-}
 
-.detail{
-    justify-content: center;
+.courtB .courtinfo {
+    margin-right: 10vw;
 }
 
 .playone_link{
+    display: flex;
     margin: 50px 0px 0px;
 }
 
 .playone_link a{
-    font-size: 10px;
-    padding: 6px 18px;
+    font-size: clamp(8px,1vw,10px);
+    padding: 0.6vw 2vw;
     background-color: #003F6A;
     border-radius: 5px;
     margin-right: 10px;
     position: relative;
     bottom: 0;
-
 }
 
 .playone_link a:nth-child(1){
@@ -170,24 +155,56 @@ span{
     background-color: #003F6A;
 }
 
+.pinpic{
+    display: none;
+}
+
+.slider{
+    display: none;
+}
+
+
+/* 跑馬 */
+
 .solid{
     -webkit-text-stroke: 1px #003F6A;
     -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 .marquee span{
     color: #003F6A;
-    font-size: 90px;
+    font-size: 70px;
 
 } 
 
 .marquee{
    margin: 0 auto;
-   margin-top: 150px;
+   margin-top: 6vw;
    border-top: 1px solid #003F6A;
    border-bottom: 1px solid #003F6A;
    background-color: #fff;
+   overflow: hidden;
+   animation-delay: -20s
 }
+
+
+.marquee .slide{
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 60s linear alternate;
+}
+
+
+@keyframes marquee{
+    0% {
+        transform: translateX(0);
+      }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 
 
 /* hover秀圖 */
@@ -205,3 +222,146 @@ span{
     position: relative;
 }
  */
+
+
+ @media screen and (max-width: 768px) {
+    h1{
+        font-size: clamp(16px,4vw,32px);
+        /* 最小字體,當前字體最大字體 */
+    }
+    
+    /* slide */
+
+    .court_information{
+        display: none;
+    }
+
+    .slider{
+        display: block;
+    }
+
+    .court {
+        position: relative;
+        overflow: hidden;
+        padding: 20px;
+        
+      }    
+      .courtlist {
+        width: 80%;
+        padding: 0 10vw;
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        margin: 0 auto;
+      }
+      
+      .courtlist::-webkit-scrollbar {
+        display: none;
+      }
+      
+      .court-card {
+        flex: 0 0 auto;
+        width: 20vw;
+        margin: 0 2vw;
+        /* border: 1px solid red; */
+      }
+      
+      .courtpic {
+        position: relative;
+        width: 100%;
+        /* height: 350px; */
+        overflow: hidden;
+      }
+      
+      .pic {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .card-btn {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0.6vw;
+        width: 80%;
+        text-transform: capitalize;
+        border: none;
+        outline: none;
+        background: #fff;
+        border-radius: 5px;
+        transition: 0.5s;
+        cursor: pointer;
+        opacity: 0;
+      }
+      
+      .courtlist:hover .card-btn {
+        opacity: 1;
+      }
+      
+      .card-btn:hover {
+        background: rgb(125, 155, 255);
+        color: #fff;
+      }
+      
+      .court-info {
+        width: 100%;
+        padding-top: 10px;
+        padding: 1vw;
+      }
+      
+      .court-info span{
+        font-size: 1vw;
+      }
+      
+      .courttinfo {
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+        overflow: hidden;
+        opacity: 0.5;
+        text-transform: capitalize;
+        margin: 5px 0;
+        
+      }
+      
+      .pre-btn,
+      .nxt-btn {
+        border: none;
+        width: 10vw;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+        cursor: pointer;
+        z-index: 8;
+      }
+      
+      .pre-btn {
+        left: 0;
+        transform: rotate(180deg);
+      }
+      
+      .nxt-btn {
+        right: 0;
+      }
+      
+      .pre-btn img,
+      .nxt-btn img {
+        opacity: 0.2;
+      }
+      
+      .pre-btn:hover img,
+      .nxt-btn:hover img {
+        opacity: 1;
+      }
+
+    /* 跑馬 */
+    .marquee{
+        display: none;
+    }
+ }
