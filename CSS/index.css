@@ -992,4 +992,7 @@ a {
         letter-spacing: normal;
     }
 
+    .productcard img{
+        width: 35vw;
+    }
   }
