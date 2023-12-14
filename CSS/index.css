@@ -629,7 +629,7 @@ a {
   }
 
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     
     .newsmq{
         width: 90%;
@@ -876,7 +876,7 @@ a {
     
   }
 
-  @media (max-width: 430px){
+  @media (max-width: 768px){
     *{
         letter-spacing: normal;
     }
