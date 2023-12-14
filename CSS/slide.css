@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap");
+
+.crew {
+  margin-top: 20vw;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  
+}
+.slider-container{
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-images{
+  display: flex;
+  align-items: center;
+  /* gap: 1vw; */
+}
+.slider-images img{
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* 外框 */
+.slider-img{
+  width: 10vw;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.7s ease;
+}
+.slider-images .slider-img:first-child, .slider-images .slider-img:last-child{
+  height: 20vw;
+}
+.slider-images .slider-img:nth-child(2), .slider-images .slider-img:nth-child(6){
+  height: 25vw;
+}
+.slider-images .slider-img:nth-child(3), .slider-images .slider-img:nth-child(4), .slider-images .slider-img:nth-child(5){
+  height: 30vw;
+}
+
+.slider-container h1{
+  font-family: "Jost", sans-serif;
+  font-size: 2vw;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 55%;
+  left: -10%;
+  transform: rotate(270deg);
+  transition: 0.7s ease;
+}
+.crew .details{
+  position: absolute;
+  bottom: 43px;
+  left: 30px;
+}
+.crew .details h2{
+  font-family: "Jost", sans-serif;
+  font-size: 2vw;
+  font-weight: 700;
+  text-align: left;
+  line-height: 44px;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.7s ease;
+  display: none;
+}
+.crew .details p{
+  font-family: "Jost", sans-serif;
+  font-size: 1vw;
+  font-weight: 700;
+  text-align: left;
+  line-height: 33px;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.7s ease;
+  display: none;
+}
+
+/* 展開 */
+.slider-img.active{
+  width: 25vw !important;
+  height: 35vw !important;
+}
+.slider-img.active h1{
+   display: none;
+}
+.slider-img.active .details p, .slider-img.active .details h2{
+  display: block;
+}

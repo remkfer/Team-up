@@ -6,7 +6,7 @@ font-family: 'Ubuntu', sans-serif; */
 
 h1 {
     color: #003F6A;
-    font-size: clamp(16px,4vw,32px);
+    font-size: clamp(16px,6vw,32px);
     letter-spacing: 3px;
     font-family: 'Bebas Neue', sans-serif;
 }
@@ -43,7 +43,7 @@ p, span {
 a, li{
     font-family: 'Noto Sans TC', sans-serif;
     line-height: 2;
-    font-size: 14px;
+    font-size: clamp(8px,1vw,14px);
 }
 
 li{

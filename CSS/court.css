@@ -87,13 +87,14 @@ span{
     flex-direction: column; 
 }
 
+
 .court_information span{
     display: flex;
 }
 
 .court_information img {
     width: 31vw;
-    vertical-align: center;
+    vertical-align: bottom;
 }
 
 .courtA, .courtB, .courtC{
@@ -101,7 +102,6 @@ span{
     align-content: center;
     justify-content: center;
     margin: 0 auto 7vw;
-    border: 1px solid red;
 }
 
 .courtB{
@@ -123,7 +123,9 @@ span{
     flex-direction: column;
     justify-content: space-evenly;
     position: relative;
+    /* border: 1px solid red; */
 } 
+
 
 
 .courtB .courtinfo {
@@ -132,14 +134,14 @@ span{
 
 .playone_link{
     display: flex;
-    margin: 50px 0px 0px;
+    margin: 4vw 0px 0px;
 }
 
 .playone_link a{
     font-size: clamp(8px,1vw,10px);
-    padding: 0.6vw 2vw;
+    padding: 0.4vw 2vw;
     background-color: #003F6A;
-    border-radius: 5px;
+    border-radius: 3px;
     margin-right: 10px;
     position: relative;
     bottom: 0;
@@ -164,6 +166,8 @@ span{
 }
 
 
+
+
 /* 跑馬 */
 
 .solid{
@@ -180,7 +184,7 @@ span{
 
 .marquee{
    margin: 0 auto;
-   margin-top: 6vw;
+   margin-top: 3vw;
    border-top: 1px solid #003F6A;
    border-bottom: 1px solid #003F6A;
    background-color: #fff;
@@ -223,142 +227,80 @@ span{
 }
  */
 
+ .foundermq{
+    display: none;
+ }
+
 
  @media screen and (max-width: 768px) {
+    
+    .court_information{
+        margin-top: 10vw;
+    }
+
+
+    .card-wrapper{
+        display: flex;
+        margin: 0 auto;
+        margin-top: 4vw;
+    }
+    
     h1{
         font-size: clamp(16px,4vw,32px);
         /* 最小字體,當前字體最大字體 */
     }
-    
-    /* slide */
 
-    .court_information{
+    .court{
         display: none;
     }
 
-    .slider{
-        display: block;
-    }
-
-    .court {
-        position: relative;
-        overflow: hidden;
-        padding: 20px;
-        
-      }    
-      .courtlist {
-        width: 80%;
-        padding: 0 10vw;
-        display: flex;
-        overflow-x: auto;
-        scroll-behavior: smooth;
-        margin: 0 auto;
-      }
-      
-      .courtlist::-webkit-scrollbar {
-        display: none;
-      }
-      
-      .court-card {
-        flex: 0 0 auto;
-        width: 20vw;
-        margin: 0 2vw;
-        /* border: 1px solid red; */
-      }
-      
-      .courtpic {
-        position: relative;
+    .pinpic{
         width: 100%;
-        /* height: 350px; */
-        overflow: hidden;
-      }
-      
-      .pic {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-      
-      .card-btn {
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 0.6vw;
-        width: 80%;
-        text-transform: capitalize;
-        border: none;
-        outline: none;
-        background: #fff;
-        border-radius: 5px;
-        transition: 0.5s;
-        cursor: pointer;
-        opacity: 0;
-      }
-      
-      .courtlist:hover .card-btn {
-        opacity: 1;
-      }
-      
-      .card-btn:hover {
-        background: rgb(125, 155, 255);
-        color: #fff;
-      }
-      
-      .court-info {
-        width: 100%;
-        padding-top: 10px;
-        padding: 1vw;
-      }
-      
-      .court-info span{
-        font-size: 1vw;
-      }
-      
-      .courttinfo {
-        width: 100%;
-        height: 20px;
-        line-height: 20px;
-        overflow: hidden;
-        opacity: 0.5;
-        text-transform: capitalize;
-        margin: 5px 0;
-        
-      }
-      
-      .pre-btn,
-      .nxt-btn {
-        border: none;
-        width: 10vw;
-        height: 100%;
-        position: absolute;
-        top: 0;
         display: flex;
         justify-content: center;
-        align-items: center;
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
-        cursor: pointer;
-        z-index: 8;
-      }
-      
-      .pre-btn {
-        left: 0;
-        transform: rotate(180deg);
-      }
-      
-      .nxt-btn {
+        margin: 0 auto;
+    }
+
+    .courtA, .courtB , .courtC{
+        margin-top: 10vw;
+        margin-bottom: 20vw;
+    }
+
+    .pinpic h2{
+        align-self: center;
+        font-size: 3vw;
+        margin-left: 3vw;
+        padding-bottom: 8vw;
+    }
+
+    .pinpic img{
+        width: 25vw;
+        vertical-align: bottom;
+    }
+
+    .courtA .courtinfo{
+        /* margin: 0 auto; */
+        /* border: 1px solid red; */
+        margin-left: 6vw;
+        padding: 1vw;
+    }
+
+    .courtinfo h2{
+        display: none;
+    }
+
+    .courtB{
+        display: flex;
+        /* flex-direction: column; */
+        /* border: 1px solid red; */
+        position: relative;
+    }
+
+    .courtB .pinpic{
+        position: absolute;
         right: 0;
-      }
-      
-      .pre-btn img,
-      .nxt-btn img {
-        opacity: 0.2;
-      }
-      
-      .pre-btn:hover img,
-      .nxt-btn:hover img {
-        opacity: 1;
-      }
+        bottom: 0;
+    }
 
     /* 跑馬 */
     .marquee{

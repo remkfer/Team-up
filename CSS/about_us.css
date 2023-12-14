@@ -28,44 +28,56 @@
 
 /* founder */
 
+.foundermq{
+    display: none;
+}
+
 .founder {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 1vw;
     position: relative;
+    margin-top: -4vw;
 }
 
-.description{
+.founder .description{
     margin-left: 16vw;
     top: 10vw;
     position: relative;
 }
 
-.description p {
+ .description p {
     width: 30vw;
-    font-size: clamp(8px,1vw,14px);
+    font-size: clamp(10px,1vw,14px);
     margin-bottom: 3vw;
 }
 
-.joe {
+.founderlist{
+    display: flex;
+}
+
+.founder .joe {
     display: flex;
     flex-direction: column;
     position: relative;
     top: 10vw;
-    left: 5vw;
-    margin-left: 16vw;
+    margin-left: 15vw;
     margin-right: 3vw;
 }
 
 
 .founder h3{
+    font-size: 2vw;
     margin-left: 2vw;
     margin-bottom: 1.5vw;
-    margin-top: 20px;
+    margin-top: 3vw;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .founder ul{
     font-size: 1vw;
+    margin-left: 2vw;
     letter-spacing: 3px;
 }
 
@@ -74,15 +86,16 @@
 }
 
 
-.hao {
+.founder .hao {
     margin-right: 16vw;
     margin-top: 3vw;
-    /* margin-left: 10vw; */
+    margin-left: 3vw;
     position: relative;
 }
 
 .pics img{
     width: 30vw;
+    vertical-align: bottom;
 }  
 
 
@@ -90,16 +103,30 @@
 
 .crew{
     margin: 0 auto;
-    /* margin-top: 160px; */
-    margin-top: 16vw;
     justify-content: center;
     box-sizing: border-box;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0);
+    top: 13vw;  /* 移下來 */
 }
 
 .crew h1{
+    font-size: clamp(16px,4vw,32px);
+    position: absolute;
+    /* margin-bottom: 3vw; */
+    /* top: 20; */
+    left: 47%;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
 }
+
+.slider-container{
+    margin-top: 11vw;
+    margin-bottom: 20vw;
+    
+}
+
 .slide{
     display: flex;
     justify-content: center;
@@ -129,11 +156,15 @@
     width: 4.5vw;
 }
 
-.crew .btn{
+.founder .crew .btn{
     display: flex;
     align-items: center;
     margin: 4vw 2.5vw 0;
 }
+
+/* .footer{
+    
+} */
 
 
 
@@ -174,7 +205,7 @@
     .description{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        
     }
 
     .description p{
@@ -183,22 +214,85 @@
         margin-bottom: 12vw;
     }
 
-    .founder {
-        
+    
+    .founder{
+        display: none;
+    }
+
+
+    .foundermq {
         display: flex;
         flex-direction: column;
-        /* flex-wrap: wrap; */
+        margin: 0 auto;
+        align-items: center;
+        /* border: 2px solid rgb(0, 76, 255); */
     }
 
-    .joe {
-        display: flex;
+    .foundermq h3{
+        font-size: clamp(14px,1.5vw,18px);
+        letter-spacing: 2px;
+        font-family: 'Bebas Neue', sans-serif;
+        padding-left: 3vw;
     }
 
-    .hao{
+    .foundermq .description{
+        align-items: center;
+        margin-top: 9vw;
+    }
+
+    .foundermq .joe {
         display: flex;
+        margin: 0 auto;
+        
+        /* border: 1px solid red; */
     }
 
     .detail{
         display: flex;
+        flex-direction: column;
+    }
+
+    .detail li{
+        font-size: clamp(10px,1vw,14px);
+    }
+
+    .foundermq .founderlist{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foundermq .hao{
+        margin-top: 9vw;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .foundermq .joe .detail{
+        margin-left: 3vw;
+        margin-top: 4vw;
+    }
+
+    .foundermq .hao .detail{
+        margin-top: 4vw;
+        left: 0;
+        align-items: start;
+        margin-right: 10vw;
+    }
+
+    .detail{
+        display: flex;
+    }
+
+    /* crew */
+
+    .crew{
+        width: 100%;
+    }
+
+    .slider-container{
+        
+        margin-top: 4vw;
+        margin-bottom: 8vw;
+        
     }
 }

@@ -1,86 +1,4 @@
 
-/* .newslist {
-    width: 200px;
-    margin-left: -60px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.contain{
-    width: 1000px;
-    margin-top: -160px;
-    box-sizing: border-box;
-}
-
-.contain p{
-    font-size: 12px;
-}
-
-.news{
-    margin-top: 150px; 
-    display: flex;
-    flex-direction: column;
-    margin-left: 90px;
-}
-.news h1{
-    margin-left: 90px;
-    text-align: start;
-}
-
-
-.news1, .news2, .news3, .news4 {
-    width: 600px;
-    padding: 10px 40px 20px;
-    margin-bottom: 80px;
-    margin-top: 40px;
-    margin-left: 270px;
-    position: relative;
-}
-.news>div h3{
-    padding-bottom: 20px;
-    border-bottom: 1px dashed #003F6A;
-}
-
-.news2 .tag{
-    background-color: #a4f0de;
-    color: #003F6A;
-}
-
-.news1, .news3{
-    background-color: rgba(232, 246, 255, 0.555);
-    background-image: linear-gradient(to left,transparent 50%, rgb(255, 255, 255));
-}
-
-.news2, .news4{
-    background-color: rgba(232, 246, 255, 0.555);
-    background-image: linear-gradient(to right,transparent 50%, rgb(255, 255, 255));
-}
-
-.time{
-    font-size: 10px;
-    align-self: flex-end;
-}
-
-.tag{
-    font-size: 10px;
-    padding: 3px 8px;
-    background-color: #003F6A;
-    color: white;
-    border-radius: 3px;
-    justify-content: end;
-    position: sticky;
-    margin-top: 20px;
-    margin-right: 410px;
-}
-
-.detail{
-    display: flex;
-    justify-content: space-around;
-} */
-
-/* news */
-
 .news{
     width: 90%;
     background: url(./img/news\ bg.png);
@@ -88,7 +6,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    margin-top: 120px;
+    margin-top: 7vw;
     align-items: center;
     /* border: 1px solid red; */
 }
@@ -129,11 +47,11 @@
 
 
 
-.newslist .tag{
+.newslist .newsdt>span:last-child{
     width: 5vw;
-    font-size: 0.7vw;
+    font-size: 0.8vw;
     font-weight: 400;
-    padding: 3px 5px;
+    padding: 0.3vw 1vw;
     margin-top: 6px;
     color: #fff;
     background-color: #FAB500;
@@ -142,8 +60,8 @@
     
 }
 
-.newslist .date{
-    font-size: 0.9vw;
+ .newsdt>span:first-child{
+    /* font-size: 1.5vw; */
     margin-right: 1vw;
 }
 
@@ -155,12 +73,14 @@
 .newsct .content{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin-left: 2.5vw;
     /* border: 1px solid red; */
 }
 
-.newsdt h4 {
-    margin-left: 3vw;
+.content h4{
+    /* border: 1px solid #000; */
+    margin: 0;
 }
 
 .newsct p{
@@ -258,22 +178,41 @@
 
 /* 小於768px */
 @media screen and (max-width:768px) {
-    .newslist{
-        width: 80%;
-        display: flex;
-        justify-content: center;
-        justify-self: center;
-        text-align: center;
+
+    .news{
+        margin-top: 12vw;
+    }
+
+    .news h1{
+        font-size: clamp(16px,4vw,32px);
         margin: 0 auto;
-        /* border: 1px solid red; */
+    }
+
+    .list{
+        margin: 0 auto;
+
+    }
+
+    .list ul{
+        padding: 0;
+    }
+
+    .newslist{
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: start;
+        flex-wrap: wrap;
+        border: 1px solid red;
     }
     
     .news1, .news2, .news3, .news4{
-        width: 80%;
+        width: 35%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* border: 1px solid rgb(0, 76, 255); */
+        border: 1px solid rgb(0, 76, 255);
     }
 
     .newsct{
@@ -287,26 +226,26 @@
     }
 
     .newsct h4{
-        width: 100%;
+        /* width: 100%; */
+    font-size: 1.6vw;   
+    text-align: left; 
     }
 
-    .newsct p{
-        width: 60%;
-        margin: 0 auto;
+    .content p{
+        /* width: 60%; */
+        margin-top: 2vw;
+        height: 15vw;
+        font-size: 1.2vw;
+        text-align: justify; 
     }
 
     .newsdt{
-        width: 60%;
+        width: 100%;
         display: flex;
         align-items: center;
         margin: 0 auto;
         border: 1px solid green;
         margin-top: 2vw;
-    }
-
-    .newsdt .date, .newsdt .tag{
-        /* display: inline; */
-        /* border: 1px solid ; */
     }
 
 

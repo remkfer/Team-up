@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="./CSS/nav.css">
     <link rel="stylesheet" href="./CSS/footer.css">
     <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/slide.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+TC:wght@100;200;400;500&family=Roboto&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+    
     <script src="https://kit.fontawesome.com/faccf86354.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -30,13 +32,25 @@
                             <li><a href="./playone.html">報隊</a></li>
                             <li><a href="./shop.html">商店</a></li>
                         </ul>
-                    </div> 
+                    </div>
                     <div class="linkicon">
                         <ul>
-                            <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            <li><a href="./shop.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                             <li><a href="./login.html"><i class="fa-regular fa-user"></i></a></li>
-                            <li><a href=""><i class="fa-solid fa-bars"></i></a></li>
+                            <li><i class="fa-solid fa-bars"  id="menu" onclick="toggleMenu()"></i></li>
                         </ul>
+                    </div>
+                 
+                        <div class="menu">
+                            <div class="submenu" id="subMenu">
+                                <ul>
+                                    <li><a href="./about_us.html" class="subMenuLink"><p>關於我們</p><span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                    <li><a href="./court.html" class="subMenuLink"><p>場館資訊</p><span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                    <li><a href="./skill.html" class="subMenuLink"><p>排球技巧</p><span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                    <li><a href="./news.html" class="subMenuLink"><p>最新消息</p><span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                </ul>
+                            </div>
+                         
                     </div>
                 </div>
             </div>
@@ -56,47 +70,89 @@
         </div>
         
     </div>
-    <div class="description">
-        <h1>founder</h1>
-        <p>我們希望整合排球館資訊，提供一個更方便的預約報隊平台，讓大家能更輕易觸及排球，在這裡你可以更快速地找到你的隊友，創造屬於自己的隊伍。 
-        </p>
-    </div>
 
     <div class="founder">
-        <div class="joe">
-            <div class="pics">
-                <!-- <img src="./img/change_j.png" alt=""> -->
-                <img src="./img/founder1.png" alt="joe's photo">
-            </div>
-            <div class="detail">
-                <h3>JOE 30Y</h3>
-                <ul>
-                    <li>臺北市臺灣師大排球隊</li>
-                    <li>企業排球聯賽 美津濃男子排球隊</li>
-                    <li>泰國職業聯賽 Diamond food男排隊</li>
-                    <li>日本排球聯賽 久保田Spears</li>
-                </ul>
-            </div>
-        </div>
-        <div class="hao">
-            <div class="pics">
-                <!-- <img src="./img/change_h.png" alt=""> -->
-                <img src="./img/founder2.png">
-            </div>
-            <div class="detail">
-                <h3>HAO 26Y</h3>
-                <ul>
-                    <li>日本體育大學 Pallavolo</li>
-                    <li>義大利PadovaVero </li>
-                    <li>義大利Volley Monza</li>
-                    <li>日本男子排球國家代表隊</li>
-                </ul>
-            </div>
+        <div class="description">
+            <h1>founder</h1>
+            <p>我們希望整合排球館資訊，提供一個更方便的預約報隊平台，讓大家能更輕易觸及排球，在這裡你可以更快速地找到你的隊友，創造屬於自己的隊伍。 
+            </p>
         </div>
 
+        <div class="founderlist">
+            <div class="joe">
+                <div class="pics" id="joepic">
+                    <!-- <img src="./img/change_j.png" alt=""> -->
+                    <img src="./img/founder1.png" alt="joe's photo">
+                </div>
+                <div class="detail">
+                    <h3>JOE 30Y</h3>
+                    <ul>
+                        <li>臺北市臺灣師大排球隊</li>
+                        <li>企業排球聯賽 美津濃男子排球隊</li>
+                        <li>泰國職業聯賽 Diamond food男排隊</li>
+                        <li>日本排球聯賽 久保田Spears</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hao">
+                <div class="pics" id="haopic">
+                    <!-- <img src="./img/change_h.png" alt=""> -->
+                    <img src="./img/founder2.png">
+                </div>
+                <div class="detail">
+                    <h3>HAO 26Y</h3>
+                    <ul>
+                        <li>日本體育大學 Pallavolo</li>
+                        <li>義大利PadovaVero </li>
+                        <li>義大利Volley Monza</li>
+                        <li>日本男子排球國家代表隊</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="foundermq">
+        <div class="description">
+            <h1>founder</h1>
+            <p>我們希望整合排球館資訊，提供一個更方便的預約報隊平台，讓大家能更輕易觸及排球，在這裡你可以更快速地找到你的隊友，創造屬於自己的隊伍。 
+            </p>
+        </div>
 
-    <div class="crew">
+        <div class="founderlist">
+            <div class="joe">
+                <div class="pics">
+                    <!-- <img src="./img/change_j.png" alt=""> -->
+                    <img src="./img/founder1.png" alt="joe's photo">
+                </div>
+                <div class="detail">
+                    <h3>JOE 30Y</h3>
+                    <ul>
+                        <li>臺北市臺灣師大排球隊</li>
+                        <li>企業排球聯賽 美津濃男子排球隊</li>
+                        <li>泰國職業聯賽 Diamond food男排隊</li>
+                        <li>日本排球聯賽 久保田Spears</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hao">
+                <div class="pics">
+                    <!-- <img src="./img/change_h.png" alt=""> -->
+                    <img src="./img/founder2.png">
+                </div>
+                <div class="detail">
+                    <h3>HAO 26Y</h3>
+                    <ul>
+                        <li>日本體育大學 Pallavolo</li>
+                        <li>義大利PadovaVero </li>
+                        <li>義大利Volley Monza</li>
+                        <li>日本男子排球國家代表隊</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- <div class="crew">
         <h1>OUR CREW</h1>
         <div class="slide">
             <div class="btn">
@@ -111,34 +167,136 @@
                 <img src="./img/pressed/crew3.png" alt="">
             </div>
             <div class="btn">
-              <button><img src="./img/slides_right.png" alt=""></button>  
+            <button><img src="./img/slides_right.png" alt=""></button>  
             </div>
         </div>
-    </div>
+    </div> -->
+
+    <div class="crew">
+        <h1>CREW</h1>
+        <div class="slider-container">
+            <div class="slider-images">
+              <div class="slider-img">
+                <img src="./img/crew slide1.jpg" alt="1" />
+                <h1>SYYY</h1>
+                <div class="details">
+                  <h2>SYYY</h2>
+                  <p>web Developer</p>
+                </div>
+              </div>
+              <div class="slider-img">
+                <img src="./img/crew slide3.jpg" alt="2" />
+                <h1>MOUSE</h1>
+                <div class="details">
+                  <h2>MOUSE</h2>
+                  <p>Supervisor</p>
+                </div>
+              </div>
+              <div class="slider-img">
+                <img src="./img/crew slide2.jpg" alt="3" />
+                <h1>JIAN</h1>
+                <div class="details">
+                  <h2>JIAN</h2>
+                  <p>Manager</p>
+                </div>
+              </div>
+              <div class="slider-img active">
+                <img src="./img/crew slide5.jpg" alt="4" />
+                <h1>JOE</h1>
+                <div class="details">
+                  <h2>JOE</h2>
+                  <p>Consultant</p>
+                </div>
+              </div>
+              <div class="slider-img">
+                <img src="./img/crew slide4.jpg" alt="5" />
+                <h1>RONG</h1>
+                <div class="details">
+                  <h2>RONG</h2>
+                  <p>Financial Officer</p>
+                </div>
+              </div>
+              <div class="slider-img">
+                <img src="./img/crew slide6.jpg" alt="6" />
+                <h1>HOWARD</h1>
+                <div class="details">
+                  <h2>HOWARD</h2>
+                  <p>Director</p>
+                </div>
+              </div>
+              <div class="slider-img">
+                <img src="./img/crew slide7.jpg" alt="7" />
+                <h1>RYAN</h1>
+                <div class="details">
+                  <h2>RYAN</h2>
+                  <p>sql Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
 
     <div class="footer">
-        <div class="information">
+        <div class="logo">
             <a href=""><img src="./img/TeamUp_footer.png" alt="teamup logo"></a>
-            <span>桃園市中壢區復興路46號</span>
-            <span>remkfer@gmail.com</span>
-            <span>TEL.038222222</span>
-        
-        
         </div>
-        <div class="social_media">
-            <div class="icon">
-                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+        <div class="footertp">
+            <div class="btlink">
+                <div class="contactform">
+                   <ul>
+                        <li><a href="./about_us.html">關於我們</a></li>
+                        <li><a href="./court.html">場館資訊</a></li>
+                        <li><a href="./skill.html">排球技巧</a></li>
+                        <li><a href="./news.html">最新消息</a></li>
+                        <li><a href="./shop.html">線上商店</a></li>
+                        <li><a href="./playone.html">報隊頁面</a></li>
+                    </ul> 
+                </div>
+                
+                <div class="social">
+                    <ul>
+                        <li><img src="" alt=""><i class="fa-brands fa-square-facebook"></i></li>
+                        <li><img src="" alt=""><i class="fa-brands fa-square-instagram"></i></li>
+                        <li><img src="" alt=""><i class="fa-brands fa-line"></i></li>
+                    </ul>
+                </div>
             </div>
-            <div class="copyright">
-                <span>@Team Up 2023</span>
+            <div class="footerR">
+                <div class="contact">
+                    <span>Contact Us</span>
+                    <div class="form">
+                        <input type="email">
+                        <input type="button" img="">
+                    </div>
+                </div>
+                <div class="ctinfo">
+                    <span>TEL.038222222</span>
+                    <span>桃園市中壢區復興路46號</span>
+                </div>
             </div>
             
+        </div> 
+    </div>
+    <div class="footerbt">
+        <div class="copyright">
+        <span>@Team Up 2023</span>
         </div>
     </div>
-    <!-- <script src="navbar.js"></script> -->
+    
+</div>
+<script src="./JS/nav_menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+
 
 </body>
 </html>

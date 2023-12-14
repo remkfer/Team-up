@@ -1,57 +1,100 @@
 .footer{
-    /* width: 100%; */
-    background-color: rgb(255, 255, 255);
+    width: 100%;
+    background-color: #e8f6ff8f;
     display: flex;
-    /* justify-content: space-around; */
+    flex-direction: column;
     margin-top: 70px;
     color: rgb(0, 0, 0);
-    border: 1px solid red;
+    padding: 2vw 0 0;
 }
 
-.information img{
-    margin-bottom: 20px;
-    width: 10vw;
+.footerbt{
+    background-color:#e8f6ff8f;
 }
 
-.information {
+.footer .logo img{
+    width: 9vw;
+    padding-top: 1vw;
+}
+
+
+.social ul{
     display: flex;
-    flex-direction: column;
-    /* margin-left: 7vw; */
-    /* margin-right: 40px; */
-    line-height: 2;
-    letter-spacing: 3px;
-    /* padding: 60px; */
-    font-size: 10px;
     position: relative;
-
 }
 
-.social_media {
-    /* margin-right: 7vw; */
+.social li{
+    margin: 0.5vw;
+}
+
+.btlink{
+    margin-left: -9vw;
+    width: 15vw;
+}
+
+.btlink ul{
     display: flex;
-    flex-direction: column;
-    /* margin-right: 90px; */
-    position: relative;
-    /* left: 600px;
-    margin-top: 100px; */
-    
+    flex-wrap: wrap;
 }
 
-.social_media i{
+.btlink li a{
+    font-size: 0.8vw;
+    color: #163f5b;
+    padding: 10px;
+}
+
+.social i{
     display: inline-block;
-    color: rgb(0, 0, 0);
-    margin-bottom: 20px;
+    color: #0d3854;
     font-size: 26px;
-    /* margin-right: 5px; */
     flex-direction: row-reverse;
     justify-items: end;
+    padding-left: 0.25vw;
 }
 
 .social_media>div{
     align-self: flex-end;
 }
 
-.copyright{
-    font-size: 10px;
-    align-items: end;
+.contact{
+    display: flex;
+    flex-direction: column;
+    color: #0d3854;
+}
+
+.contact input{
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+
+.ctinfo{
+    color: #0d3854;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vw;
+}
+
+.ctinfo span{
+    font-size: 0.9vw;
+}
+
+.footertp{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.footerbt{
+    padding: 1vw;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #d8e4ec;
+}
+
+.copyright span{
+    color: #0d3854;
+    margin: 0 auto;
+    font-size: 0.8vw;
+    letter-spacing: normal;
 }

@@ -164,6 +164,6 @@ nav ul{
 
 @media screen and (max-width: 768px) {
     .linkicon{
-        display: none;
+        /* display: none; */
     }
 }
