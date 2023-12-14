@@ -949,15 +949,13 @@ a {
 
     .info{
         display: flex;
-        border: 1px solid rgb(0, 255, 38);
+        /* border: 1px solid rgb(0, 255, 38); */
     }
 
     .btn{
         width: 18vw;
         border-radius: 2px;
     }
-
-
 
     /* procedure */
 
