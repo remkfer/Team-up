@@ -30,21 +30,31 @@
                             <li><a href="./playone.html">報隊</a></li>
                             <li><a href="./shop.html">商店</a></li>
                         </ul>
-                    </div> 
+                    </div>
                     <div class="linkicon">
                         <ul>
-                            <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            <li><a href="./shop.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                             <li><a href="./login.html"><i class="fa-regular fa-user"></i></a></li>
-                            <li><a href=""><i class="fa-solid fa-bars"></i></a></li>
+                            <li><i class="fa-solid fa-bars"  id="menu" onclick="toggleMenu()"></i></li>
                         </ul>
+                    </div>
+                 
+                        <div class="menu">
+                            <div class="submenu" id="subMenu">
+                                <ul>
+                                    <li><a href="./about_us.html" class="subMenuLink"><p>關於我們</p><span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                    <li><a href="./court.html" class="subMenuLink"><p>場館資訊</p><span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                    <li><a href="./skill.html" class="subMenuLink"><p>排球技巧</p><span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                    <li><a href="./news.html" class="subMenuLink"><p>最新消息</p><span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                </ul>
+                            </div>  
                     </div>
                 </div>
             </div>
         </nav>
     </div>
-
-    
-    <div class="product_contain">
+    <div class="productpage">
+        <div class="product_contain">
         <div class="mainarea">
             <div class="breadcrumbs">
             <span><a href="">全部商品</a> > <a href="">排球衣</a></span> 
@@ -181,6 +191,104 @@
             <a href=""><img src="./img/recommend_2.png" alt=""></a>
             <a href=""><img src="./img/recommend_3.png" alt=""></a>
             <button><img src="./img/recommend_right.png" alt=""></button>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- mq -->
+    <div class="productpagemq">
+        <div class="product_contain">
+            <div class="mainarea">
+                <h1>PRODUCT</h1>
+                <div class="breadcrumbs">
+                <span><a href="">全部商品</a> > <a href="">排球衣</a></span> 
+                </div>
+                <div class="product_photo">
+                    <div class="mainPic">
+                        <img src="https://picsum.photos/300/200/?random=4">
+                    </div>
+                </div>
+            </div>
+            <div class="side">
+                <h3>超進化排球戰術球衣</h3>
+                <div class="intro">
+                    <div class="type">
+                        <span>100% Cotton</span>
+                        <span>white</span>
+                    </div>
+                    
+                    <div class="price">
+                    <span>NT$ 550</span>
+                </div>
+            </div>
+                
+            <div class="cart">
+                <div class="size">
+                    <ul>
+                        <li><span>XS</span></li>
+                        <li><span>S</span></li>
+                        <li><span>M</span></li>
+                        <li><span>L</span></li>
+                        <li><span>XL</span></li>
+                    </ul>
+                </div>
+                
+                <div class="addToCart">
+                    <button><img src="./cart-.png" alt=""></button>
+                    <div class="num">1</div>
+                    <button><img src="./cart+.png" alt=""></button>
+                </div>
+            </div>
+            <div class="btn">
+                <button class="addToCart_btn">加入購物車</button>
+            
+            
+                <button class="buy_btn">直接結帳</button>
+            </div> 
+        </div>
+        <div class="description">
+            <h4>商品描述</h4>
+            <div class="detail">
+                <p>
+                    專為真正熱愛排球的球迷和選手而設計。這款超進化排球衣結合了高科技面料和經典設計，為您提供極致舒適和優異性能
+                </p>
+
+                <img src="https://picsum.photos/300/200/?random=1">
+        
+                <p>符合人體工學的剪裁，確保在每個動作中都有最大的靈活性和舒適感</p>
+
+                <img src="https://picsum.photos/300/200/?random=2">
+
+                <p>高度透氣、吸濕排汗的面料，確保您始終保持清涼舒爽<br>
+                耐磨肘部設計和加強版防摔設計，提供更多保護
+                </p>
+
+                <img src="https://picsum.photos/300/200/?random=3">
+
+                <p>簡約而時尚的外觀，搭配極具辨識度的色彩和圖案，讓您在場上脫穎而出</p>
+
+                <div class="sizeguide">
+                    <h4>尺寸表</h4>
+                    <span>XS :  衣長65、肩寬52、袖長20、胸寬112</span>
+                    <span>S :  衣長65、肩寬52、袖長20、胸寬112</span>
+                    <span>M :  衣長65、肩寬52、袖長20、胸寬112</span>
+                    <span>L :  衣長65、肩寬52、袖長20、胸寬112</span>
+                    <span>XL :  衣長65、肩寬52、袖長20、胸寬112</span>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="recommend">
+            <h3>YOU MAY LIKE</h3>
+            <div class="list">
+                <button><img src="./img/recommend_left.png" alt=""></button>
+                <a href=""><img src="./img/recommend_1.png" alt=""></a>
+                <a href=""><img src="./img/recommend_2.png" alt=""></a>
+                <a href=""><img src="./img/recommend_3.png" alt=""></a>
+                <button><img src="./img/recommend_right.png" alt=""></button>
+            </div>
         </div>
     </div>
     </div>
