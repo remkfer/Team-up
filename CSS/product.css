@@ -315,7 +315,6 @@ td{
     .side{
         width: 100%;
         margin: 6vw 0 0;
-        border: 1px solid red;
     }
 
     .intro{
@@ -342,14 +341,11 @@ td{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        /* border: 1px solid red; */
     }
 
     .size ul{
         display: flex;
         margin: 0; 
-        /* padding-right: 22vw; */
-        /* margin-left: -7vw; */
     }
 
     .size li{
@@ -406,7 +402,7 @@ td{
         width: 100%;
         margin: 0 auto;
         margin-top: 9vw;
-        border: 1px solid red;
+
     }
     
 
