@@ -162,6 +162,10 @@
     margin: 4vw 2.5vw 0;
 }
 
+.crewmb{
+    display: none;
+}
+
 /* .footer{
     
 } */
@@ -189,7 +193,7 @@
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .about_us h1, .description h1 {
         font-size: clamp(16px,4vw,32px);
     }
@@ -286,17 +290,48 @@
     /* crew */
 
     .crew{
-        width: 100%;
+        display: none;
     }
 
-    .slider-container{
+    .crewmb{
+        display: block;
+        overflow: hidden;
+        animation-delay: 40s;
+    }
+
+    .marquee{
+        animation: marquee 25s linear infinite;
         
-        margin-top: 4vw;
-        margin-bottom: 8vw;
-        
+    }
+
+    .crewmb h1{
+        font-size: clamp(16px,4vw,32px);
+        display: flex;
+        justify-content: center;
+        margin-top: 15vw;
+    }
+
+    .marquee h2{
+        font-size: clamp(15px,1.5vw,18px);
+        letter-spacing: 2px;
+        font-family: 'Bebas Neue', sans-serif;
+    }
+
+    .marquee img{
+        width: 22vw;
+    }
+
+    .marquee .crewCard{
+        margin: 3vw 1.2vw;
+    }
+
+    @keyframes marquee{
+        0% {
+            transform: translateX(0);
+          }
+        100% {
+            transform: translateX(-100%);
+        }
     }
 }
 
-@media (max-width: 430px){
-    
-}

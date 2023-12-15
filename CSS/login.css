@@ -1,9 +1,8 @@
 .login_card{
     display: flex;
-    margin-top: 150px;
+    margin-top: 25vh;
     justify-content: center;
 }
-
 
 
 .login_form h3{
@@ -28,29 +27,34 @@
     font-size: 1vw;
 }
 
-.login_card ::-webkit-input-placeholder {
+::-webkit-input-placeholder {
     color: #003F6A;
     font-size: 10px; 
    }
 
 .login_form input{
-    width: 195px;
-    margin: 13px;
+    width: 16vw;
+    margin: 1vw;
     border: none;
     text-align: left;
     border-bottom: 1px solid #003F6A;
+    background-color: transparent;
     outline: none; /*拿掉輸入框線*/
+}
+
+input[type="password"]{
+    width: 16vw;
 }
 
 .forgetpw{
     display: flex;
     justify-content: end;
-    margin-right: 25px;
+    margin-right: 2vw;
 }
 
 .forgetpw a{
     color: #003F6A;
-    font-size: 0.8vw;
+    font-size: clamp(8px,1vw,12px);
 }
 
 .login_btn{
@@ -85,29 +89,79 @@
 }
 
 .password img{
-    width: 14px;
+    width: 1vw;
+}
+
+.login_cardmq{
+    display: none;
 }
 
 
-@media screen and (max-width: 790px) {
-    .login_card .pic img{
-        width: 100%; 
-        z-index: -999;  
+@media (max-width:768px){
+    .login_card{
+        display: none;
+    }
+    
+    body{
+        background-image: url(../img/login.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .login_cardmq{
+        display: block;
+        margin: 0 auto;
+        margin-top: 20vh;
+        background-color: rgb(255, 255, 255,0.8);
+        border-radius: 2px;
+        width: 60%;
+        padding: 6vw;
     }
 
 
+    .login_cardmq h3{
+        font-size: clamp(16px,4vw,32px);
+    }
+
+    .login_cardmq label{
+        font-size: clamp(10px,1vw,14px);
+    }
+
+    ::-webkit-input-placeholder {
+        color: #003F6A;
+        font-size: clamp(8px,1vw,12px);
+       }
+
+    .login_cardmq .form{
+        display: flex;
+        flex-direction: column; 
+    }
 
     .login_btn{
-        width: 20vw;
+        margin: 0 auto;
+        width: 50vw;
     }
 
-    .login_form{
-        border: 1px solid red;
+    .login_btn a{
+        font-size: clamp(10px,1vw,14px);
     }
 
-    .login_card{
+    .login_cardmq .login_btn :last-child{
+        border: none;
+        background-color: #fff;
+        color: #003F6A;
+    }
+
+    .password img{
+        width: 2.5vw;
+    }
+
+    .forgetpw{
         display: flex;
-        flex-direction: column;
+        justify-content: end;
+        margin-right: 20vw;
     }
 
 }
