@@ -120,6 +120,24 @@ input[type="password"]{
         padding: 6vw;
     }
 
+    .login_form{
+        margin: 0;
+    }
+
+    .email{
+        padding-bottom: 6vw;
+    }
+
+    .form{
+        margin: 10vw auto;
+        
+
+    }
+
+    .login_form input{
+        width: 30vw;
+    }
+
 
     .login_cardmq h3{
         font-size: clamp(16px,4vw,32px);
