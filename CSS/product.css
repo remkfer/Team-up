@@ -245,3 +245,210 @@ td{
     margin: 40px;
     background-color: #E9F2FF;
 }
+
+.productpagemq{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .productpage{
+        display: none;
+    }
+
+    .productpagemq{
+        display: block;
+    }
+
+    .product_contain{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .product_photo{
+        margin: 0;
+        padding: 0;
+    }
+
+    .productpagemq h1{
+        margin-top: 12vw;
+        color: #003F6A;
+        font-size: clamp(16px,4vw,32px);
+        font-family: 'Bebas Neue', sans-serif;
+    }
+
+    .productpagemq h3{
+        font-size: clamp(12px,2.5vw,32px);
+        font-weight: 500;
+    }
+
+
+    .productpagemq h4{
+        color: #003F6A;
+        font-size: clamp(10px,2vw,32px);
+        margin: 0;
+        font-family: 'Bebas Neue', sans-serif;
+    
+    }
+
+    .breadcrumbs a{
+        text-decoration: none;
+        color: #003F6A;
+        font-size: clamp(10px,1vw,14px);
+    }
+
+    .breadcrumbs{
+        margin: 2vw 0;
+    }
+
+    .mainPic{
+        width: 100%;
+        margin: 0;
+        /* margin: 0 auto; */
+    }
+
+    .mainPic img{
+        width: 100%;
+    }
+
+    .side{
+        width: 100%;
+        margin: 6vw 0 0;
+        border: 1px solid red;
+    }
+
+    .intro{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 2vw;
+        /* margin-left: -7vw; */
+        /* border: 1px solid red; */
+    }
+
+    .intro span{
+        padding: 3vw 1vw;
+    }
+
+    .price{
+        /* margin-right: -17vw; */
+        color: #003F6A;
+        font-size: 16px;
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    .cart{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+
+    .size ul{
+        display: flex;
+        margin: 0; 
+        /* padding-right: 22vw; */
+        /* margin-left: -7vw; */
+    }
+
+    .size li{
+        width: 8vw;
+        text-align: center;
+        align-items: start;
+        font-size: clamp(10px,1vw,14px);
+        list-style: none;
+    }
+
+    .size span{
+        padding: 1vw 2vw;
+        border: 1px solid ;
+        border-radius: 2px;
+    } 
+    
+
+    .addToCart button{
+        border: none;
+        background-color: transparent;
+        padding: 5vw;
+    }
+
+    .addToCart img{
+        width: 4vw;
+    }
+
+    .addToCart{
+        display: flex;
+        align-items: center;
+    }
+
+    .btn{
+        
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .btn button{
+        font-size: 2.3vw;
+        width: 40vw;
+        border: none;
+        background-color: rgb(212, 232, 245);
+        color: #003F6A;
+        padding: 1vw 1.5vw;
+        border-radius: 2px;
+    }
+
+
+
+    /* description */
+
+    .description{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 9vw;
+        border: 1px solid red;
+    }
+    
+
+    .description p{
+        width: 90%;
+        font-size: clamp(10px,1vw,14px);
+        padding: 2vw 0;
+        line-height: 2;
+    }
+
+    .description img{
+        width: 90.5%;
+        vertical-align: bottom;
+    }
+
+    /* size */
+    
+    .sizeguide{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sizeguide span {
+        font-size: clamp(10px,1vw,14px);
+        letter-spacing: 2px;
+        line-height: 2;
+    }
+
+    .sizeguide h4{
+        margin: 4vw 0;
+    }
+
+    .recommend{
+        display: none;
+    }
+
+    .recommend img{
+        width: 20vw;
+
+    }
+
+}
+    
+
+
