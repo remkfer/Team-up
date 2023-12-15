@@ -113,11 +113,12 @@
     }
 
     .signin_form input{
-        
+        border-radius: 0px;
         background-color: transparent;
         align-items: center;
         border: none;
         border-bottom: 1px solid #003F6A;
+    
     }
 
 
