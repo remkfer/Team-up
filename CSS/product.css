@@ -303,8 +303,7 @@ td{
     }
 
     .mainPic{
-        width: 100%;
-        margin: 0;
+        margin: 0 auto;
         /* margin: 0 auto; */
     }
 
@@ -399,7 +398,7 @@ td{
     /* description */
 
     .description{
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
         margin-top: 9vw;
 
@@ -407,14 +406,14 @@ td{
     
 
     .description p{
-        width: 90%;
+        width: 80%;
         font-size: clamp(10px,1vw,14px);
         padding: 2vw 0;
         line-height: 2;
     }
 
     .description img{
-        width: 90.5%;
+        width: 80%;
         vertical-align: bottom;
     }
 
