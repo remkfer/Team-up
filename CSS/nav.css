@@ -274,22 +274,27 @@ nav ul{
 
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     
-    .linkicon a{
-        font-size: clamp(18px,2vw,14px);
+    .linkicon li i{
+        font-size: clamp(10px,1vw,14px);
         border: none;
+        margin: 0;
+        padding: 1vw;
     }
 
     #menu{
-        font-size: clamp(10px,1vw,14px);
+        font-size: clamp(11px,1vw,14px);
+        padding: 1vw;
     }
 
+
     .navlist a{
-        font-size: clamp(10px,1vw,14px);
+        font-size: clamp(11px,1vw,14px);
         padding: 0;
-        padding: 0.6vw 2.5vw;      
+        padding: 0.6vw 1vw;      
         border: none; 
+        margin: 0;
     }
 
     .navlist a:hover{
