@@ -40,7 +40,7 @@
 .btlink li a{
     font-size: 0.8vw;
     color: #163f5b;
-    padding: 10px;
+    padding: 1vw;
 }
 
 .social i{
@@ -62,9 +62,24 @@
     color: #0d3854;
 }
 
+.footerR .form input{
+    padding: 0;
+}
+
+.footerR span{
+    font-size: 0.8vw;
+}
+
+.footerR .form input{
+    font-size: 1.2vw;
+    padding: 0.2vw 0.8vw;
+}
+
+
+
 .contact input{
-    background-color: rgb(255, 255, 255);
-    border: none;
+    background-color: transparent;
+    border: 0.1vw solid rgb(190, 190, 244);
 }
 
 .ctinfo{
@@ -72,10 +87,6 @@
     display: flex;
     flex-direction: column;
     margin-top: 1vw;
-}
-
-.ctinfo span{
-    font-size: 0.9vw;
 }
 
 .footertp{
@@ -97,4 +108,82 @@
     margin: 0 auto;
     font-size: 0.8vw;
     letter-spacing: normal;
+}
+
+.ctinfo .social{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .contactform ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactform{
+        width: 100%;
+    }
+
+    .footer .social{ 
+        display: flex;
+        width: 100%;
+        position: relative;
+    }
+
+    .btlink{
+        width: 40%;
+        margin: 0 auto;
+        display: flex;
+    }
+
+
+    .footertp{
+        display: flex;
+        
+    }
+
+    .footerR .contact{
+        display: none;
+        
+    }
+
+    .footer .social{
+        display: none;
+    }
+
+    .footerR .social{
+        display: block;
+    }
+
+    .footerR .social ul{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 2vw;
+        /* border: 1px solid red; */
+    }
+
+    .social li {
+        width: 6vw;
+        margin: 0.8vw;
+        padding: 0.5vw;
+    }
+
+    .social li img{
+        width: 100%;
+    }
+
+    .contactform li a{
+        font-size: clamp(8px, 1vw, 12px);
+    }
+
+    .ctinfo{
+        margin-right: 8vw;
+    }
+
+    .ctinfo span{
+        font-size: clamp(8px, 1vw, 12px);
+        
+    }
+
+    
 }
