@@ -176,10 +176,10 @@ nav ul{
         font-size: clamp(10px,1vw,14px);
         padding: 0;
         padding: 0.6vw 2.5vw;    
-        border: none;   
+        border: none;  
+        justify-content: end; 
     }
     .navlist a:hover{
-        
         background-color: transparent;
     }
 
