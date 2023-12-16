@@ -23,7 +23,7 @@ let initialized = false;
  */
 let options = {
   offset: 120,
-  delay: 10,
+  delay: 40,
   easing: 'ease',
   duration: 1000,
   disable: false,

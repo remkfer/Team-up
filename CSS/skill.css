@@ -192,9 +192,10 @@
         font-size: clamp(10px,1vw,14px);
     }
 
-    .concept p{
-        font-size: clamp(10px,1vw,14px);
+    .concept{
+        display: none;
     }
+    
 
 
     .description span{
