@@ -55,72 +55,17 @@
     </div>
 
     <div class="bookpage">
-        
-        <div class="title">
-            <h1>桃園館</h1>
-            <h3>NOVEMBER</h3>
-            <h1>預約狀態</h1>
-            
+        <div class="status">
+            <div class="title">
+                <h1>桃園館</h1>
+            </div>
+            <div id="calendar">
+                
+            </div>
         </div>
+          
 
-    <div class="calendar">
-        <table>
-            <th>日</th>
-            <th>一</th>
-            <th>二</th>
-            <th>三</th>
-            <th>四</th>
-            <th>五</th>
-            <th>六</th>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
-                <td>10</td>
-                <td>11</td>
-            </tr>
-            <tr>
-                <td>12</td>
-                <td>13</td>
-                <td>14</td>
-                <td>15</td>
-                <td>16</td>
-                <td>17</td>
-                <td>18</td>
-            </tr>
-            <tr>
-                <td>19</td>
-                <td>20</td>
-                <td>21</td>
-                <td>22</td>
-                <td>23</td>
-                <td>24</td>
-                <td>25</td>
-            </tr>
-            <tr>
-                <td>26</td>
-                <td>27</td>
-                <td>28</td>
-                <td>29</td>
-                <td>30</td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
-    </div>
-</div>
-
+<!-- 表單 -->
 <div id="searchItem" class="searchItem">
     <ul>
     　 <li class="onSearch"><a onclick="SearchTag('searchItem','searchCont','0');">報隊</a></li>
@@ -196,36 +141,30 @@
     
         　 <li class="rent" style="display:none;">
                 <div class="form">
-                    <div class="left">
-                        <div class="pickcourt">
-                            <label for="name">負責人:</label>
-                            <input type="text">
-                        </div>
-                        <div class="phone">
-                            <label for="phone">
-                            電話: </label>
-                            <input type="text" id="phone" name="phone" />
-                            
-                        </div>
-                        <div class="piccourt">
-                            <label for="court">
-                            場館: </label>
-                            <select>
-                                <option>桃園館</option>
-                                <option>中壢館</option>
-                                <option value="3">平鎮館</option>
-                            </select>
-                        
-                        </div>
+                    <div class="name">
+                        <label for="name">負責人:</label>
+                        <input type="text">
                     </div>
-    
-                    <div class="pickdate">
-                        <label for="date">日期</label>
-                        <div class="dateinput">
-                          <input type="date"><br>至<br>
-                            <input type="date">  
-                        </div>
+                    <div class="phone">
+                        <label for="phone">
+                        電話: </label>
+                        <input type="text" id="phone" name="phone" />
                         
+                    </div>
+                    <div class="piccourt">
+                        <label for="court">
+                        場館: </label>
+                        <select>
+                            <option>桃園館</option>
+                            <option>中壢館</option>
+                            <option value="3">平鎮館</option>
+                        </select>
+                    </div>
+                
+                    <div class="rentpickdate">
+                        <label for="date">日期:</label>
+                          <input type="date">  
+                
                     </div>
     
                     <div class="purpose">
@@ -245,11 +184,12 @@
                             <option value="net">不限定</option>
                         </select>
                     </div>
+                    <div class="submit">
+                        <input type="button" value="submit">
+                    </div> 
                 </div>
+            </div>
     
-                <div class="submit">
-                    <input type="button" value="submit">
-                </div> 
             </li><!--1 -->
         </ul>
     </div>
@@ -305,5 +245,19 @@
     <!-- <script src="navbar.js"></script> -->
     <script language="javascript" src="./JS/tag.js"></script>
     <script src="./JS/nav_menu.js"></script>
+    <script src="./JS/jquery-3.7.1.min.js"></script>
+    <script src="./JS/jquery-ui.js"></script>
+
+    <script>
+        /*calendar*/
+        $(function() {
+        $("#calendar").datepicker({
+            inline: true,
+            showOtherMonths: true,
+            selectOtherMonths: false,
+            dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+        });
+        });
+    </script>
 </body>
 </html>
