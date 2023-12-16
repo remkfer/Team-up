@@ -151,11 +151,29 @@
         display: none;
     }
 
+    .skill h3{
+        display: flex;
+        justify-content: center;
+        font-size: clamp(14px,2vw,18px);
+    }
+
+    .skill img{
+        width: 50vw;
+    }
+
+    .skill p{
+        width: 35vw;
+        margin: 0 auto;
+        margin-top: 3vw;
+    }
+
     .teach{
         align-items: center;
     }
 
-    
+    .description span{
+        display: none;
+    }
     
 }
 
