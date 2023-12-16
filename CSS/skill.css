@@ -142,11 +142,24 @@
 
 
 @media (max-width: 768px){
+    .nav{
+        width: 90%;
+    }
 
+    .contain{
+        margin: 0;
+        padding: 0;
+        width: 90%;
+    }
 
     .skill{
-        border: 1px solid red;
+        width: 100%;
         margin: 0 auto;
+        margin-top: 12vw;
+    }
+
+    .skill h1{
+        margin-left: 7vw;
     }
 
     .teach{
@@ -163,21 +176,20 @@
         display: flex;
         justify-content: start;
         font-size: clamp(14px,2vw,18px);
+        
+    }
+
+    .description{
+        width: 50vw
     }
 
     .skill img{
         width: 80%;
-        /* margin: 0 auto; */
     }
 
     .descriptext p{
         margin-top: 5vw;
         font-size: clamp(10px,1vw,14px);
-    }
-
-    .descriptext{
-        width: 60vw;
-        margin-left: 0;
     }
 
     .concept p{
@@ -186,6 +198,8 @@
 
 
     .description span{
+        margin: 0;
+        padding: 0;
         display: none;
     }
     
