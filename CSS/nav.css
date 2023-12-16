@@ -276,9 +276,18 @@ nav ul{
 
 @media screen and (max-width: 768px) {
     
-    .navlist .link a{
+    .linkicon a{
+        font-size: clamp(10px,1vw,14px);
+        border: none;
+    }
+
+    #menu{
         font-size: clamp(10px,1vw,14px);
     }
 
-    
+    .navlist a{
+        font-size: clamp(10px,1vw,14px);
+        padding: 0;
+        padding: 0.6vw 2.5vw;       
+    }
 }
