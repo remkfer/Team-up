@@ -1,5 +1,5 @@
 #navbar {
-    width: 100%;
+    width: 100vw;
     height: 8vw;
     display: flex;
     align-items: center;
@@ -10,7 +10,7 @@
     top: 0;
     background-color: rgb(255, 255, 255);
     transition: background-color 0.6s;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .logo img{
@@ -275,7 +275,11 @@ nav ul{
 
 
 @media screen and (max-width: 768px) {
-    
+    .nav {
+        width: 100%;
+    }
+
+
     .linkicon li i{
         font-size: clamp(10px,1vw,14px);
         border: none;
@@ -285,7 +289,6 @@ nav ul{
 
     #menu{
         font-size: clamp(11px,1vw,14px);
-        padding: 1vw;
     }
 
 
