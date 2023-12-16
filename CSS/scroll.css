@@ -1,0 +1,14 @@
+.item {
+    width: 50%;
+    background-color: rgb(225, 239, 245);
+}
+
+.description{
+    width: 50%;
+    background-color: rgb(198, 226, 238);
+}
+
+.serve{
+    width: 80%;
+}
+

@@ -22,14 +22,7 @@
     font-size: 20px;
 }
 
-/* .googlecalendar {
-    display: flex;
-    justify-content: center;
-}
 
-.googlecalendar{
-    margin-bottom: 90px;
-} */
 
 .calendar table{
     width: 800px;
@@ -61,36 +54,41 @@
 
 /* switch button */
 
-.change_btn{
+.searchItem ul{
     display: flex;
     justify-content: center;
+    
 }
 
-.change_btn button{
-    
+.searchItem a{
     border: 1px solid #003F6A;
     background-color: #ffffff;
-    width: 200px;
-    padding: 8px;
+    /* width: 20vw; */
+    padding: 0.5vw 10vw;
     margin-bottom: 40px;
+    text-align: center;
 }
 
-.change_btn button:first-child{
+
+.searchItem li:first-child{
     background-color: #003F6A;
-    color: #fff;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: 0.5vw;
+    border-bottom-left-radius: 0.5vw;
 }
-.change_btn button:last-child{
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+
+
+.searchItem li:last-child{
+    background-color: #ffffff;
+    border-top-left-radius: 0.5vw;
+    border-bottom-left-radius: 0.5vw;
 }
+
+
 
 /* form */
 
 
-
-.playone{
+.searchCont{
     width:800px;
     margin: 0 auto;
     display: flex;
@@ -100,11 +98,12 @@
     font-family: 'Noto Sans TC', sans-serif;
 }
 
+
 .form input{
-    margin-bottom: 30px;
+    margin: 1.5vw 0
 }
 
-.playone .form{
+.form{
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
@@ -169,13 +168,16 @@ label{
     flex-direction: column;
 }
 
+.form input{
+    outline: none;
+}
 
 
 .picknet, .pictype{
     margin-right: 20px;
 }
 
-.playone .submit input{
+.submit input{
     display: flex;
     align-self: center;
     margin: 10px auto 40px;
@@ -200,3 +202,29 @@ label{
     color: #003F6A;
     font-size: 10px; 
    }
+
+.rent .form{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    margin: 0 auto;
+    /* justify-content: start; */
+    outline: none;
+    
+}
+
+.rent input{
+    border: none;
+    border-bottom: 1px solid #003F6A;
+    width: 10vw;
+}
+
+.rent .left{
+    margin: 0 auto;
+    /* align-items: start; */
+}
+
+.dateinput{
+    flex-direction: column;
+}

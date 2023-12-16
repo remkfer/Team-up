@@ -30,13 +30,24 @@
                             <li><a href="./playone.html">報隊</a></li>
                             <li><a href="./shop.html">商店</a></li>
                         </ul>
-                    </div> 
+                    </div>
                     <div class="linkicon">
                         <ul>
-                            <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            <li><a href="./shop.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                             <li><a href="./login.html"><i class="fa-regular fa-user"></i></a></li>
-                            <li><a href=""><i class="fa-solid fa-bars"></i></a></li>
+                            <li><i class="fa-solid fa-bars"  id="menu" onclick="toggleMenu()"></i></li>
                         </ul>
+                    </div>
+                 
+                        <div class="menu">
+                            <div class="submenu" id="subMenu">
+                                <ul>
+                                    <li><a href="./about_us.html" class="subMenuLink"><p>關於我們</p><span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                    <li><a href="./court.html" class="subMenuLink"><p>場館資訊</p><span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                    <li><a href="./skill.html" class="subMenuLink"><p>排球技巧</p><span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                    <li><a href="./news.html" class="subMenuLink"><p>最新消息</p><span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                </ul>
+                            </div>  
                     </div>
                 </div>
             </div>
@@ -51,9 +62,7 @@
             <h1>預約狀態</h1>
             
         </div>
-    <!-- <div class="googlecalendar">
-        <iframe src="https://calendar.google.com/calendar/embed?src=remkfer%40gmail.com&ctz=Asia%2FTaipei" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-    </div> -->
+
     <div class="calendar">
         <table>
             <th>日</th>
@@ -111,77 +120,140 @@
         </table>
     </div>
 </div>
-    <div class="change_btn">
-        <button>報隊</button>
-        <button>場地租借</button>
+
+<div id="searchItem" class="searchItem">
+    <ul>
+    　 <li class="onSearch"><a onclick="SearchTag('searchItem','searchCont','0');">報隊</a></li>
+    　 <li><a onclick="SearchTag('searchItem','searchCont','1');">場地租借</a></li>
+    </ul>
+    </div>
+    <div id="searchCont" class="searchCont">
+        <ul>
+        　 <li>
+                <div class="form">
+                    <div class="left">
+                        <div class="pickcourt">
+                            <label for="date">場館:</label>
+                            <select>
+                                <option>桃園館</option>
+                                <option>中壢館</option>
+                                <option value="3">平鎮館</option>
+                            </select>
+                        </div>
+                        <div class="pickdate">
+                            <label for="date">
+                            日期: </label>
+                            <input type="date" id="date" name="date" />
+                            
+                        </div>
+                        <div class="picknum">
+                            <label for="peoplenum">
+                            人數: </label>
+                            <input type="number" id="peoplenum" name="peoplenum" />
+                        
+                        </div>
+                    </div>
+    
+                    <div class="right">
+                        <div class="pictype">
+                            <label for="type">種類: </label>
+                            <input type="radio" id="type" name="type" />男排&nbsp;&nbsp;
+                            <input type="radio" id="type" name="type" />女排&nbsp;&nbsp;
+                            <input type="radio" id="type" name="type" />混排
+                        </div>
+                        
+                        <div class="picknet">
+                            <label for="net">網高: </label>
+                            <input type="radio" id="net" name="net" />男網&nbsp;&nbsp;
+                            <input type="radio" id="net" name="net" />女網&nbsp;&nbsp;
+                            <input type="radio" id="net" name="net" />不限定
+                        </div>
+    
+                        <div class="picktime">
+                            <label for="time">時間:</label>
+                            <select>
+                                <option>09:00</option>
+                                <option>10:00</option>
+                                <option>11:00</option>
+                                <option>12:00</option>
+                                <option>13:00</option>
+                                <option>14:00</option>
+                                <option>15:00</option>
+                                <option>16:00</option>
+                                <option>17:00</option>
+                                <option>18:00</option>
+                                <option>19:00</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                </div>
+    
+                <div class="submit">
+                    <input type="button" value="submit">
+                </div> 
+            </li><!--0 -->
+    
+        　 <li class="rent" style="display:none;">
+                <div class="form">
+                    <div class="left">
+                        <div class="pickcourt">
+                            <label for="name">負責人:</label>
+                            <input type="text">
+                        </div>
+                        <div class="phone">
+                            <label for="phone">
+                            電話: </label>
+                            <input type="text" id="phone" name="phone" />
+                            
+                        </div>
+                        <div class="piccourt">
+                            <label for="court">
+                            場館: </label>
+                            <select>
+                                <option>桃園館</option>
+                                <option>中壢館</option>
+                                <option value="3">平鎮館</option>
+                            </select>
+                        
+                        </div>
+                    </div>
+    
+                    <div class="pickdate">
+                        <label for="date">日期</label>
+                        <div class="dateinput">
+                          <input type="date"><br>至<br>
+                            <input type="date">  
+                        </div>
+                        
+                    </div>
+    
+                    <div class="purpose">
+                        <label for="purpose">目的: </label>
+                        <select name="purpose" id="purpose">
+                            <option value="net">辦比賽</option>
+                            <option value="net">單純打球</option>
+                            <option value="net">其他活動</option>
+                        </select>
+                    </div>
+                        
+                    <div class="picknet">
+                        <label for="net">網高: </label>
+                        <select name="net" id="net">
+                            <option value="net">男網</option>
+                            <option value="net">女網</option>
+                            <option value="net">不限定</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div class="submit">
+                    <input type="button" value="submit">
+                </div> 
+            </li><!--1 -->
+        </ul>
     </div>
 
-    <div class="playone">
-        <div class="form">
-            <div class="left">
-                <div class="pickcourt">
-                    <label for="date">場館:</label>
-                    <select>
-                        <option>桃園館</option>
-                        <option>中壢館</option>
-                        <option value="3">平鎮館</option>
-                    </select>
-                </div>
-                <div class="pickdate">
-                    <label for="date">
-                    日期: </label>
-                    <input type="date" id="date" name="date" />
-                    
-                </div>
-                <div class="picknum">
-                    <label for="peoplenum">
-                    人數: </label>
-                    <input type="number" id="peoplenum" name="peoplenum" />
-                
-                </div>
-            </div>
-
-            <div class="right">
-                <div class="pictype">
-                    <label for="type">種類: </label>
-                    <input type="radio" id="type" name="type" />男排&nbsp;&nbsp;
-                    <input type="radio" id="type" name="type" />女排&nbsp;&nbsp;
-                    <input type="radio" id="type" name="type" />混排
-                </div>
-                
-                <div class="picknet">
-                    <label for="net">網高: </label>
-                    <input type="radio" id="net" name="net" />男網&nbsp;&nbsp;
-                    <input type="radio" id="net" name="net" />女網&nbsp;&nbsp;
-                    <input type="radio" id="net" name="net" />不限定
-                </div>
-
-                <div class="picktime">
-                    <label for="time">時間:</label>
-                    <select>
-                        <option>09:00</option>
-                        <option>10:00</option>
-                        <option>11:00</option>
-                        <option>12:00</option>
-                        <option>13:00</option>
-                        <option>14:00</option>
-                        <option>15:00</option>
-                        <option>16:00</option>
-                        <option>17:00</option>
-                        <option>18:00</option>
-                        <option>19:00</option>
-                    </select>
-                </div>
-                
-            </div>
-            
-            
-        </div>
-        <div class="submit">
-            <input type="button" value="submit">
-        </div>
-    </div>
-</div>
 
 
 <div class="footer">
@@ -231,6 +303,6 @@
     </div>
 </div>
     <!-- <script src="navbar.js"></script> -->
-
+    <script language="javascript" src="./JS/tag.js"></script>
 </body>
 </html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/scroll.css">
+    <link rel="stylesheet" href="./scroll.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="skill">
+        <h1>SKILL</h1>
+
+        <div class="aos-item" data-aos="fade-down">
+        <div class="serve">
+            <h3>發球</h3>
+            <div class="teach">
+                <div class="item">
+                    <img src="./img/serve.png" alt="發球">
+                    <div class="ps">
+                        <p>
+                            <span>ps.<br></span>注意發球的動作應是流暢且連貫的，有助於提高發球的效果，拋球的距離和高度也很重要。
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="description">
+                    <div class="descriptext">
+                        <p>
+                        發球者面對球網，朝發球方位稍微跨出左腳，左手將球向上拋在右肩前上方約一公尺高(依個人習慣調整)，躬身挺胸，右臂舉起往後，在將手軸伸舉至肩上，用全掌或將拇指內屈，以掌心擊球，擊球瞬間手臂盡量伸直。
+                        </p>
+                        <p>
+                        可根據對手的防守站位，適時調整發球的方向和速度，增加發球多樣性。
+                        </p>
+                    </div>
+                    
+                    <span class="serveSpan">SERVE</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="aos-item" data-aos="fade-right">
+        <div class="serve">
+            <h3>發球</h3>
+            <div class="teach">
+                <div class="item">
+                    <img src="./img/serve.png" alt="發球">
+                    <div class="ps">
+                        <p>
+                            <span>ps.<br></span>注意發球的動作應是流暢且連貫的，有助於提高發球的效果，拋球的距離和高度也很重要。
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="description">
+                    <div class="descriptext">
+                        <p>
+                        發球者面對球網，朝發球方位稍微跨出左腳，左手將球向上拋在右肩前上方約一公尺高(依個人習慣調整)，躬身挺胸，右臂舉起往後，在將手軸伸舉至肩上，用全掌或將拇指內屈，以掌心擊球，擊球瞬間手臂盡量伸直。
+                        </p>
+                        <p>
+                        可根據對手的防守站位，適時調整發球的方向和速度，增加發球多樣性。
+                        </p>
+                    </div>
+                    
+                    <span class="serveSpan">SERVE</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./JS/scroll.js"></script>
+    <script>
+      document.querySelector('html').classList.remove('no-js');
+      if (!window.Cypress) {
+        const scrollCounter = document.querySelector('.js-scroll-counter');
+
+        AOS.init({
+          mirror: true
+        });
+
+        document.addEventListener('aos:in', function(e) {
+          console.log('in!', e.detail);
+        });
+
+        window.addEventListener('scroll', function() {
+          scrollCounter.innerHTML = window.pageYOffset;
+        });
+      }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+</body>
+</html>
