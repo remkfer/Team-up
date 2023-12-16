@@ -274,10 +274,10 @@ nav ul{
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     
     .linkicon a{
-        font-size: clamp(10px,1vw,14px);
+        font-size: clamp(18px,2vw,14px);
         border: none;
     }
 
