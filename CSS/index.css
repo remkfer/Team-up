@@ -909,18 +909,20 @@ a {
         flex-direction: row;
     }
 
-    .date{
-        border: 1px solid;
-        padding: 0;
-        margin: 0;
-    }
 
     .newsmq .tag{
-        width: 14vw;
+        width: 8vw;
+        margin: 0;
+        margin-right: 4vw;
     }
 
     .newsmq h3{
         font-size: clamp(10px,1.5vw,16px);
+    }
+
+    .info{
+        width: 100%;
+        display: flex;
     }
 
     .newsmq .news1{
@@ -947,10 +949,6 @@ a {
         order: -1;
     }
 
-    .info{
-        display: flex;
-        /* border: 1px solid rgb(0, 255, 38); */
-    }
 
     .btn{
         width: 18vw;

@@ -6,8 +6,8 @@
 
 
 .product img{
-    width: 250px;
-    vertical-align: middle;
+    width: 20vw;
+    vertical-align: bottom;
 }
 
 
@@ -40,11 +40,7 @@
 }
 
 
-.tops1 .productName{
-    margin-top: 60px;
-}
-
-.bottoms .productName{
+.productName{
     margin-top: 60px;
 }
 
@@ -183,10 +179,22 @@
   .sock3:hover img{
     transform: scale(1.05);
   }
+
+  .productmq{
+    display: none;
+  }
   
 
   @media screen and (max-width: 768px) {
-    
+    .product{
+      display: none;
+    }
+
+    .productmq{
+      display: block;
+    }
+
+
     .product_side_list{
       position: relative;
       margin: 0 auto;
@@ -212,7 +220,7 @@
     }
 
     .product img{
-      width: 100%;
+      width: 20vw;
       
     }
 
