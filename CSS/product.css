@@ -258,6 +258,7 @@ td{
 
     .productpagemq{
         display: block;
+        width: 100%;
     }
 
     .product_contain{
@@ -318,23 +319,19 @@ td{
     }
 
     .intro{
+        width: 100%;
         display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: space-around;
         margin-top: 2vw;
-    }
-
-    .intro span{
-        padding: 3vw 1vw;
+        border: 1px solid red;
     }
 
     .price{
-        /* margin-right: -17vw; */
         color: #003F6A;
         font-size: 16px;
         font-family: 'Bebas Neue', sans-serif;
+        margin: 0;
     }
+
     .cart{
         display: flex;
         justify-content: space-around;
@@ -343,44 +340,46 @@ td{
 
     .size ul{
         display: flex;
-        margin: 0; 
+        width: 100%;
+        /* border: 1px solid blue; */
+        justify-self: start;
+        padding: 0;
+        margin-left: 1.5vw;
     }
 
     .size li{
-        width: 8vw;
-        text-align: center;
-        align-items: start;
         font-size: clamp(10px,1vw,14px);
         list-style: none;
+        margin: 0.5vw;
     }
 
     .size span{
-        padding: 1vw 2vw;
-        border: 1px solid ;
+        padding: 1vw 2.3vw;
+        color: #003F6A;
+        border: 1px solid #003F6A;
         border-radius: 2px;
+        letter-spacing: normal;
     } 
+
+    .cart{
+        /* border: 1px solid red; */
+        
+    }
     
+    .addToCart {
+        width: 100%;
+        justify-content: end;
+        /* border: 1px solid blue; */
+    }
 
     .addToCart button{
-        border: none;
-        background-color: transparent;
-        padding: 5vw;
+        padding: 0;
     }
 
     .addToCart img{
         width: 4vw;
     }
 
-    .addToCart{
-        display: flex;
-        align-items: center;
-    }
-
-    .btn{
-        
-        display: flex;
-        justify-content: space-around;
-    }
 
     .btn button{
         font-size: 2.3vw;
@@ -388,7 +387,8 @@ td{
         border: none;
         background-color: rgb(212, 232, 245);
         color: #003F6A;
-        padding: 1vw 1.5vw;
+        padding: 1.5vw 1.5vw;
+        margin: 1.5vw;
         border-radius: 2px;
     }
 
@@ -397,15 +397,14 @@ td{
     /* description */
 
     .description{
-        width: 90%;
+        /* width: 90%; */
         margin: 0 auto;
         margin-top: 9vw;
-
     }
     
 
     .description p{
-        width: 80%;
+        width: 70%;
         font-size: clamp(10px,1vw,14px);
         padding: 2vw 0;
         line-height: 2;
