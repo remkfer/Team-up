@@ -183,4 +183,12 @@ nav ul{
         background-color: transparent;
     }
 
+    .submenu {
+        width: 50vw;
+    }
+
+    .submenu.open-menu{
+        width: 50vw;
+    }
+
 }
