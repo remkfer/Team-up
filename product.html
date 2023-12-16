@@ -61,9 +61,9 @@
             </div>
             <div class="product_photo">
                 <div class="mainPic">
-                    <img src="./img/product_top.png" alt="">
+                    <img id="large" src="./img/product_top.png" alt="">
                 </div>
-                <div class="morePic">
+                <div id="small" class="morePic">
                     <img src="./img/product_top5.png" alt="">
                     <img src="./img/product_top2.png" alt="">
                     <img src="./img/product_top3.png" alt="">
@@ -206,7 +206,7 @@
                 </div>
                 <div class="product_photo">
                     <div class="mainPic">
-                        <img src="./img/product_top.png" alt="">
+                        <img id="large" src="./img/product_top.png" alt="">
                     </div>
                 </div>
             </div>
@@ -340,5 +340,22 @@
         <span>@Team Up 2023</span>
         </div>
     </div>
+
+    <script>
+        function showLarge(e){
+          let small = e.target;
+          document.getElementById("large").src = small.src;
+        }
+        
+        function init(){
+            let smalls = document.querySelectorAll(".morePic img");
+        
+            for(let i=0; i<smalls.length; i++) {
+                smalls[i].onclick = showLarge;
+            }
+        }
+        
+        window.addEventListener("load", init, false);
+        </script>
 </body>
 </html>

@@ -870,7 +870,7 @@ a {
         width: 15vw;
     }
 
-    .link_list{
+    .link_list, .preload{
         display: none;
     }
     
@@ -992,5 +992,9 @@ a {
 
     .productcard img{
         width: 35vw;
+    }
+
+    .preload{
+        display: none;
     }
   }
