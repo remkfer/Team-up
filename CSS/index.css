@@ -870,7 +870,7 @@ a {
         width: 15vw;
     }
 
-    .link_list, .preload{
+    .link_list{
         display: none;
     }
     
