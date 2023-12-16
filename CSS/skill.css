@@ -143,6 +143,7 @@
 
 @media (max-width: 768px){
 
+
     .skill{
         border: 1px solid red;
         margin: 0 auto;
@@ -171,11 +172,16 @@
 
     .descriptext p{
         margin-top: 5vw;
+        font-size: clamp(10px,1vw,14px);
     }
 
     .descriptext{
         width: 60vw;
         margin-left: 0;
+    }
+
+    .concept p{
+        font-size: clamp(10px,1vw,14px);
     }
 
 

@@ -94,15 +94,14 @@ nav ul{
 }
 
 .submenu{
-    width: 60vw;
+    width: 15vw;
     position: relative;
     background-color: #fff;
     /* padding: 1vw; */
     position: absolute;
     top: 100%;
     right: 0;
-    width: 13vw;
-    height: 100vh;
+    height: 50vh;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s;
@@ -126,6 +125,7 @@ nav ul{
 
 /* 展開 */
 .submenu.open-menu{
+    width: 15vw;
     max-height: 100vh;
     background-color: rgb(255, 255, 255);
 }

@@ -30,13 +30,24 @@
                             <li><a href="./playone.html">報隊</a></li>
                             <li><a href="./shop.html">商店</a></li>
                         </ul>
-                    </div> 
+                    </div>
                     <div class="linkicon">
                         <ul>
-                            <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            <li><a href="./shop.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                             <li><a href="./login.html"><i class="fa-regular fa-user"></i></a></li>
-                            <li><a href=""><i class="fa-solid fa-bars"></i></a></li>
+                            <li><i class="fa-solid fa-bars"  id="menu" onclick="toggleMenu()"></i></li>
                         </ul>
+                    </div>
+                 
+                        <div class="menu">
+                            <div class="submenu" id="subMenu">
+                                <ul>
+                                    <li><a href="./about_us.html" class="subMenuLink"><p>關於我們</p><span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                    <li><a href="./court.html" class="subMenuLink"><p>場館資訊</p><span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                    <li><a href="./skill.html" class="subMenuLink"><p>排球技巧</p><span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                    <li><a href="./news.html" class="subMenuLink"><p>最新消息</p><span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                                </ul>
+                            </div>  
                     </div>
                 </div>
             </div>
@@ -105,6 +116,6 @@
         </div>
     </div>  
 
-        
+    <script src="./JS/nav_menu.js"></script>
 </body>
 </html>

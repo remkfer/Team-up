@@ -1,5 +1,4 @@
 #navbar {
-    width: 100vw;
     height: 8vw;
     display: flex;
     align-items: center;
@@ -38,6 +37,7 @@ nav ul{
 
 .nav li{
     justify-content: space-between;
+    
 }
 
 
@@ -213,14 +213,14 @@ nav ul{
 }
 
 .submenu{
-    width: 60vw;
+    width: 15vw;
     position: relative;
     background-color: #eff9ff;
     /* padding: 1vw; */
     position: absolute;
     top: 100%;
     right: 0;
-    width: 13vw;
+    /* width: 13vw; */
     height: 100vh;
     max-height: 0;
     overflow: hidden;
@@ -245,17 +245,19 @@ nav ul{
 
 /* 展開 */
 .submenu.open-menu{
-    max-height: 100vh;
+    width: 15vw;
+    max-height: 50vh;
     background-color: #edf8ff;
 }
 
 .subMenuLink{
     display: flex;
     align-items: center;
+    margin: 0 auto;
 }
 
 .subMenuLink p{
-    margin-right: 2vw;
+    /* margin: 0 auto; */
 }
 
 .subMenuLink:hover p{
@@ -289,6 +291,14 @@ nav ul{
 
     #menu{
         font-size: clamp(11px,1vw,14px);
+    }
+
+    .submenu {
+        width: 30vw;
+    }
+
+    .submenu.open-menu{
+        width: 30vw;
     }
 
 
