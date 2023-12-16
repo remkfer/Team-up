@@ -277,7 +277,14 @@
         font-size: clamp(10px, 1vw, 14px);
     }
 
+    .pagination ul{
+        margin: 0;
+        padding: 0;
+    }
 
+    .prev a, .next a{
+        font-size: clamp(8px, 1vw, 14px);
+    }
    
 }
 
