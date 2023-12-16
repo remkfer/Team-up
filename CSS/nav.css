@@ -229,7 +229,7 @@ nav ul{
 } 
 
 .menu li{
-    padding: 3px 10px;
+    padding: 3px 2vw;
 }
 
 .submenu ul{
@@ -294,11 +294,11 @@ nav ul{
     }
 
     .submenu {
-        width: 30vw;
+        width: 50vw;
     }
 
     .submenu.open-menu{
-        width: 30vw;
+        width: 50vw;
     }
 
 
