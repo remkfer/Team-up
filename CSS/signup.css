@@ -89,13 +89,14 @@
     }
 
     .signin_cardmq{
+        width: 80%;
         display: block;
         margin: 0 auto;
         margin-top: 20vh;
         background-color: rgb(255, 255, 255,0.8);
         border-radius: 2px;
-        width: 70%;
         padding: 6vw;
+        margin-top: 13vw;
     }
 
     .form{
@@ -132,7 +133,7 @@
         font-size: clamp(10px,1vw,14px);
     }
 
-    .password img{
+    .password img , .confirm img{
         width: 2.5vw;
     }
 
@@ -150,6 +151,15 @@
     .submit_btn a{
         font-size: clamp(10px,1vw,14px);
         padding: 0.6vw 12vw;
+    }
+
+    .form label{
+        text-align: justify;
+        border: 1px solid red;
+    }
+
+    .name input, .phone input, .email input, .password input, .confirm input{
+        width: 30vw;
     }
 
 }
