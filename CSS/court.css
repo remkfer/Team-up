@@ -179,7 +179,6 @@ span{
 .marquee span{
     color: #003F6A;
     font-size: 70px;
-
 } 
 
 .marquee{
@@ -306,7 +305,13 @@ span{
     }
 
     /* 跑馬 */
-    .marquee{
-        /* display: none; */
+    .marquee span{
+        color: #003F6A;
+        font-size: 6vw;
+    } 
+
+    .solid{
+        -webkit-text-stroke: 0.1vw #003F6A;
     }
+
  }
