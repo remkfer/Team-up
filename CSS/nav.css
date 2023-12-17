@@ -190,11 +190,6 @@ nav ul{
     transition: background-color 0.6s;
 }
 
-.logo img{
-    width: 15vw;
-    margin-left: 6.8vw;
-}
-
 .navlist{
     display: flex;
     align-items: center;
