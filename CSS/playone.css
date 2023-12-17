@@ -171,7 +171,7 @@
 }
 
 .searchItem a{
-    border: 1px solid #003F6A;
+    border: 0.1vw solid #003F6A;
     border-radius: 0.3vw;
     background-color: #ffffff;
     padding: 0.5vw 5vw;
@@ -188,7 +188,7 @@
     margin: 0 auto;
     display: flex;
     color: #003F6A;
-    flex-direction: column;border: 1px solid black;
+    flex-direction: column;border: 0.1vw solid #003F6A;
     border-radius: 0.5vw;
     font-family: 'Noto Sans TC', sans-serif;
 }
@@ -218,7 +218,7 @@ input, select{
 .pickcourt select{
     width: 15vw;
     border: none;
-    border-bottom: 1px solid #003F6A;
+    border-bottom: 0.1vw solid #003F6A;
 }
 
 .pickdate{
@@ -230,7 +230,7 @@ input, select{
 .pickdate input{
     width: 15vw;
     border: none;
-    border-bottom: 1px solid #003F6A;
+    border-bottom: 0.1vw solid #003F6A;
 }
 
 .picknum{
@@ -242,7 +242,7 @@ input, select{
 .picknum input{
     width: 15vw;
     border: none;
-    border-bottom: 1px solid #003F6A;
+    border-bottom: 0.1vw solid #003F6A;
 }
 
 label{
@@ -299,7 +299,7 @@ label{
 .picktime select{
     width: 14vw;
     border: none;
-    border-bottom: 1px solid #003F6A;
+    border-bottom: 1px border-bottom: 0.1vw solid #003F6A;
 }
 
 
@@ -323,7 +323,7 @@ label{
 
 .rent input{
     border: none;
-    border-bottom: 1px solid #003F6A;
+    border-bottom: 0.1vw solid #003F6A;
     width: 10vw;
 }
 
@@ -359,7 +359,7 @@ label{
     width: 15.5vw;
     outline: none;
     border: none;
-    border-bottom: 1px solid #003F6A;
+    border-bottom: 0.1vw solid #003F6A;
     margin-bottom: 2vw;
 }
 
