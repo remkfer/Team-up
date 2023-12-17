@@ -104,8 +104,8 @@
     display: block;
     width: 12px;
     height: 12px;
-    border-left: 3px solid #003F6A;
-    border-bottom: 3px solid #003F6A;
+    border-left: 0.3vw solid #55768c;
+    border-bottom: 0.3vw  solid #55768c;
   }
   
   .ui-datepicker-calendar thead tr th span {
@@ -144,7 +144,7 @@
   }
   
   .ui-datepicker-calendar .ui-state-highlight {
-    color: #f26a63;
+    color: #ffe330;
     font-weight: bold;
   }
   
@@ -371,7 +371,25 @@ label{
 
 @media (max-width: 768px){
     #calendar {
-        width: 80%;
+        width: 65%;
+    }
+
+    .ui-datepicker-calendar thead tr th span {
+        font-size: clamp(11px,1vw,12px);
+    }
+
+    .ui-datepicker-header {
+        border: none;
+    }
+    
+    .ui-datepicker-prev:after {
+        width: 1vw;
+        height: 1vw;
+    }
+
+    .ui-datepicker-next:after {
+        width: 1vw;
+        height: 1vw;
     }
 
     /* form */
