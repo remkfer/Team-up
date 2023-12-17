@@ -592,9 +592,9 @@ a {
 
 .loading img{
     position: absolute;
-    width: 300px;
-    top: 48%;
-    right: 37%;
+    width: 20vw;
+    top: 50vh;
+    left: 40vw;
     margin: 0 auto;
     
     animation: circle infinite 3s linear;
