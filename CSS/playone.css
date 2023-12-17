@@ -33,7 +33,7 @@
     width: 40vw;
     background: #ffffff;
     border-radius: 5px;
-    overflow: hidden;
+    /* overflow: hidden; */
     float: left;
   }
   
@@ -79,7 +79,7 @@
     text-indent: 9999px;
     border-radius: 100%;
     cursor: pointer;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   
   .ui-datepicker-prev {
@@ -213,7 +213,6 @@ input, select{
 
 .pickcourt{
     display: flex;
-    justify-content: space-around;
 }
 .pickcourt select{
     width: 15vw;
@@ -222,25 +221,21 @@ input, select{
 }
 
 .pickdate{
-    width: 20vw;
+    /* width: 20vw; */
     display: flex;
     text-align: center;
-    justify-content: space-around;
 }
 .pickdate input{
-    width: 15vw;
     border: none;
     border-bottom: 0.1vw solid #003F6A;
 }
 
 .picknum{
-    width: 20vw;
+    /* width: 20vw; */
     display: flex;
-    justify-content: space-around;
 }
 
 .picknum input{
-    width: 15vw;
     border: none;
     border-bottom: 0.1vw solid #003F6A;
 }
@@ -391,19 +386,30 @@ label{
     .form{
         width: 100%;
         flex-direction: column;
-        border: 1px solid red;
     }
 
     .left{
         width: 50%;
-        border: 1px solid red;
         align-items: start;
     }
 
     .right{
         width: 50%;
-        border: 1px solid red;
     }
 
 }
 
+
+.pickcourt, .pickdate, .picknum{
+    /* display: flex;
+    /* border: 1px solid red; */
+    /* width: 100%;
+    gap: 20px; */
+}
+
+.searchCont{
+    border: 1px solid red;
+}
+.searchCont div{
+    display: flex;
+}

@@ -76,6 +76,12 @@ label{
     display: flex;    
 }
 
+.password img , .confirm img{
+    width: 1.2vw;
+    height: 0.6vw;
+    align-self: center;
+}
+
 
 @media(max-width: 768px){
     .signin_card{
