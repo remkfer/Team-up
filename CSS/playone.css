@@ -57,12 +57,12 @@
   /*Styling the Header Section*/
   
   .ui-datepicker-header {
-    height: 60px;
+    height: 7vw;
     border-bottom: 1px solid #c6cdd2;
   }
   
   .ui-datepicker-title {
-    color: #e5eaee;
+    color: #aeb0b1;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -70,7 +70,6 @@
   
   .ui-datepicker-title span{
     font-size: 2.5vw;
-    
   }
   
   .ui-datepicker-prev,
@@ -108,8 +107,8 @@
     display: block;
     width: 12px;
     height: 12px;
-    border-left: 3px solid #6a7883;
-    border-bottom: 3px solid #6a7883;
+    border-left: 3px solid #003F6A;
+    border-bottom: 3px solid #003F6A;
   }
   
   .ui-datepicker-calendar thead tr th span {
@@ -127,10 +126,9 @@
   .ui-state-default {
     display: block;
     color: #f26a63;
-    line-height: 40px;
+    line-height: 4vw;
     text-align: center;
-    font-size: 16px;
-    width: 40px;
+    font-size: 1.5vw;
   }
   
   .ui-datepicker-other-month .ui-state-default {
@@ -141,7 +139,7 @@
   /*active day*/
   
   .ui-state-default:hover {
-    background: #6a7883;
+    background: #a4bfd3;
     color: #ffffff;
     border: 1px solid #6a7883;
     border-radius: 99px;
@@ -155,10 +153,10 @@
   }
   
   .ui-datepicker-calendar .ui-state-active {
-    background: #6a7883;
+    background: #003F6A;
     color: #ffffff;
     border: 1px solid #6a7883;
-    border-radius: 99px;
+    border-radius: 0.5vw;
     position: relative;
     margin: -1px;
   }
@@ -371,5 +369,12 @@ label{
     margin: 0 auto;
     text-align: center;
     margin-left: 0;
+}
+
+@media (max-width: 768px){
+    #calendar {
+        width: 80%;
+    }
+
 }
 
