@@ -368,6 +368,11 @@ label{
     margin-left: 30px;
 }
 
+.rent .picknet {
+    margin-bottom: 4vw;
+}
+
+
 @media (max-width: 768px){
     #calendar {
         width: 65%;
