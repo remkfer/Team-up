@@ -358,4 +358,38 @@ nav ul{
     .navlist a:hover{
         background-color: transparent;
     }
+
+
+    /* hereeeeee */
+
+    .linkicon a{
+        font-size: clamp(10px,1vw,14px);
+        border: none;
+    }
+
+    #menu{
+        font-size: clamp(10px,1vw,14px);
+    }
+
+    .navlist a{
+        font-size: clamp(10px,1vw,14px);
+        padding: 0;
+        padding: 0.6vw 2.5vw;    
+        border: none;  
+        justify-content: center;
+    }
+    .navlist a:hover{
+        background-color: transparent;
+    }
+
+    .submenu {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .submenu.open-menu{
+        width: 100vw;
+        height: 100vh;
+    }
+
 }
