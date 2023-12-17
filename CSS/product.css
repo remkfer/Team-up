@@ -414,17 +414,17 @@ td{
     /* description */
 
     .description{
-        width: 100%;
+        width: 90%;
         margin: 0;
         padding: 0;
         margin: 0 auto;
+        margin-left: 1vw;
         margin-top: 9vw;
-        
     }
     
 
     .description p{
-        width: 80vw;
+        width: 100%;
         font-size: clamp(10px,1vw,14px);
         padding: 2vw 0;
         line-height: 2;
@@ -432,7 +432,7 @@ td{
     }
 
     .description img{
-        width: 80%;
+        width: 100%;
         vertical-align: bottom;
         
     }
