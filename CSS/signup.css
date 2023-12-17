@@ -17,8 +17,7 @@
 }
 
 .form{
-    margin-bottom: 30px;
-    margin-top: 40px;
+    margin: 30px 0 13px 0;
     font-family: 'Noto Sans TC', sans-serif;
     color: #003F6A;
     font-size: 14px;
@@ -46,7 +45,6 @@
     font-size: 12px;
     text-align: center;
     margin: 0 auto;
-    margin-top: 20px;
     padding: 3px 107px;
     background-color: #003F6A;
     color: white;
@@ -62,9 +60,20 @@
     display: none;
 }
 
+.form div{
+    display: flex;
+}
+
+.form input:not(.gender input){
+    width: 150px;
+}
+
 label{
-    width: 90px;
-    border: 1px solid red;
+    width: 60px;
+}
+
+.submit_btn{
+    display: flex;    
 }
 
 
@@ -85,9 +94,6 @@ label{
         background-size: cover;
     }
 
-    .form *{
-        border: 1px solid #000;
-    }
 
     .signin_cardmq{
         width: 70%;
@@ -106,7 +112,7 @@ label{
        
     }
 
-    .form input{
+    .form input:not(.confirm){
         margin: 0;
         padding: 0;
         margin-bottom: 4vw;
@@ -142,7 +148,8 @@ label{
     }
 
     .password img , .confirm img{
-        width: 2.5vw;
+        width: 3vw;
+        height: 1.5vw;
     }
 
     .submit_btn{
