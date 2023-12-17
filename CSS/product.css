@@ -24,6 +24,8 @@ body{
     
 }
 
+
+
 .price{
     margin-top: 40px;
 }
@@ -51,6 +53,14 @@ body{
     background-color: #F4F9FF;
     padding: 3px;
     margin-top: 5px;
+}
+
+.mainPic img{
+    width: 35vw;
+}
+
+.morePic img{
+    width: 8vw;
 }
 
 .addToCart{
@@ -414,7 +424,7 @@ td{
     
 
     .description p{
-        width: 80vw;
+        /* width: 80vw; */
         font-size: clamp(10px,1vw,14px);
         padding: 2vw 0;
         line-height: 2;
@@ -422,7 +432,7 @@ td{
     }
 
     .description img{
-        width: 80vw;
+        width: 100%;
         vertical-align: bottom;
         
     }
