@@ -246,7 +246,7 @@ nav ul{
 /* 展開 */
 .submenu.open-menu{
     width: 15vw;
-    max-height: 50vh;
+    max-height: 45vh;
     background-color: #edf8ff;
 }
 
@@ -256,8 +256,9 @@ nav ul{
     margin: 0 auto;
 }
 
-.subMenuLink p{
-    /* margin: 0 auto; */
+.submenu ul{
+    margin: 0 auto;
+    margin-left: 35vw;
 }
 
 .subMenuLink:hover p{
@@ -294,11 +295,11 @@ nav ul{
     }
 
     .submenu {
-        width: 50vw;
+        width: 100vw;
     }
 
     .submenu.open-menu{
-        width: 50vw;
+        width: 100vw;
     }
 
 
