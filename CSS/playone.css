@@ -7,6 +7,10 @@
     margin: 0 auto;
 }
 
+.bookpage h1{
+    font-size: clamp(3vw,3vw,32vw);
+}
+
 .status{
     display: flex;
     flex-direction: column;
@@ -23,16 +27,10 @@
 }
 
 
-
-.title h1:nth-child(3){
-    font-size: 20px;
-}
-
 /* calendar */
-/*calendar*/
 
 #calendar {
-    width: 380px;
+    width: 40vw;
     background: #ffffff;
     border-radius: 5px;
     overflow: hidden;
@@ -41,8 +39,10 @@
   
   .ui-datepicker {
     margin: 30px 20px;
-    font-size: 22px;
+    /* font-size: 80px; */
   }
+
+
   
   .ui-datepicker a {
     text-decoration: none;
@@ -62,20 +62,25 @@
   }
   
   .ui-datepicker-title {
-    font-size: 32px;
     color: #e5eaee;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  
+  .ui-datepicker-title span{
+    font-size: 2.5vw;
+    
   }
   
   .ui-datepicker-prev,
   .ui-datepicker-next {
-    width: 12px;
-    height: 12px;
+    width: 1vw;
+    height: 1vw;
     text-indent: 9999px;
     border-radius: 100%;
     cursor: pointer;
     overflow: hidden;
-    margin-top: -12px;
   }
   
   .ui-datepicker-prev {
