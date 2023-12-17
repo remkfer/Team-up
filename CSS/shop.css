@@ -201,11 +201,12 @@
     .title h1{
       font-size: clamp(16px,4vw,32px);
       display: flex;
-      justify-content: center;
+      margin-left: 4vw;
     }
 
     .top, .sock, .bottom{
-      margin: 20px;
+      box-sizing: border-box;
+      margin: 1vw 1vw;
       width: 250px;
       height: 300px;
       border: 0.1vw solid rgb(196, 196, 196);
@@ -215,14 +216,14 @@
     .all_btn a{
       writing-mode: vertical-lr ;
       font-size: clamp(14px,1vw,14px);
-      height: 302px;
+      height: 300px;
       letter-spacing: 8px;
       text-align: center;
       color: white;
       background-color: #003F6A;
       border: none;
-      margin-top: 3vw;
-      margin-right: 3vw;
+      margin-top: 1vw;
+      margin-right: 1vw;
       padding: 0 2vw ;
       border-radius: 0.5vw;
   }
@@ -238,19 +239,23 @@
   }
 
   .productName{
-    margin-top: 6vw;
+    margin-top: 3vw;
   }
 
   .bottom .productName{
-    margin-top: 15vw;
+    margin-top: 12vw;
   }
 
   .tops{
-    margin-top: 8vw;
+    margin-top: 6vw;
   }
 
   .bottoms, .socks{
-    margin-top: 18vw;
+    margin-top: 20vw;
+  }
+
+  .socks{
+    margin-bottom: 10vw;
   }
 
   .productmq i {
@@ -264,7 +269,6 @@
   .socks i{
     right: -13vw;
   }
-
 
 
   }
