@@ -260,16 +260,7 @@
   }
 
   .productmq i {
-    font-size: 2vw;
-    border: none;
-    position: absolute;
-    top: -0.5vw;
-    right: -5vw;
+    display: none;
   }
-
-  .socks i{
-    right: -13vw;
-  }
-
 
   }
