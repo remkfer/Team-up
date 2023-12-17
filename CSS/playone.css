@@ -151,7 +151,6 @@
   .ui-datepicker-calendar .ui-state-active {
     background: #003F6A;
     color: #ffffff;
-    border: 1px solid #6a7883;
     border-radius: 0.5vw;
     position: relative;
     margin: -1px;
@@ -375,7 +374,7 @@ label{
     }
 
     .ui-datepicker-calendar thead tr th span {
-        font-size: clamp(11px,1vw,12px);
+        font-size: clamp(9px,1vw,12px);
     }
 
     .ui-datepicker-header {
