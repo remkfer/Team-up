@@ -89,19 +89,28 @@
     }
 
     .signin_cardmq{
-        width: 80%;
+        width: 70%;
         display: block;
-        margin: 0 auto;
-        margin-top: 20vh;
         background-color: rgb(255, 255, 255,0.8);
         border-radius: 2px;
         padding: 6vw;
-        margin-top: 13vw;
+        margin: 0;
+        margin: 0 auto; margin-top: 20vh; 
+        padding: 3vw 0vw 6vw 9vw;
     }
 
     .form{
         margin: 0 auto;
-        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+       
+    }
+
+    .form input{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 4vw;
+        margin-left: 1vw;
     }
 
     .signin_cardmq h3{
@@ -116,7 +125,6 @@
     .signin_form input{
         border-radius: 0px;
         background-color: transparent;
-        align-items: center;
         border: none;
         border-bottom: 1px solid #003F6A;
     
@@ -153,13 +161,9 @@
         padding: 0.6vw 12vw;
     }
 
-    .form label{
-        text-align: justify;
-        border: 1px solid red;
-    }
 
-    .name input, .phone input, .email input, .password input, .confirm input{
-        width: 30vw;
+    .confirm input{
+        width: 28.5vw;
     }
 
 }
