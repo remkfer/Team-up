@@ -1,4 +1,6 @@
-
+.contain{
+    overflow: hidden;
+}
 
 .skill h3{
     font-size: 1.5vw;

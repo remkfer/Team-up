@@ -8,9 +8,6 @@
     padding: 2vw 0 0;
 }
 
-.footerbt{
-    background-color:#e8f6ff8f;
-}
 
 .footer .logo img{
     width: 9vw;
@@ -115,9 +112,11 @@
 }
 
 @media (max-width: 768px){
+
     .contactform ul{
         display: flex;
         flex-direction: column;
+        
     }
 
     .contactform{
@@ -126,7 +125,7 @@
 
     .footer .social{ 
         display: flex;
-        width: 100%;
+        /* width: 100%; */
         position: relative;
     }
 
@@ -177,7 +176,8 @@
     }
 
     .ctinfo{
-        margin-right: 8vw;
+        margin: 0;
+        padding: 0;
     }
 
     .ctinfo span{

@@ -299,7 +299,7 @@ label{
 .picktime select{
     width: 14vw;
     border: none;
-    border-bottom: 1px border-bottom: 0.1vw solid #003F6A;
+    border-bottom: 1px; border-bottom: 0.1vw solid #003F6A;
 }
 
 
@@ -349,6 +349,7 @@ label{
     display: flex;
 }
 
+
 .rent input{
     width: 15vw;
     align-items: end;
@@ -368,10 +369,10 @@ label{
     margin: 0 auto;
 }
 
-.rent button{
-    margin: 0 auto;
+.rent .submit input{
     text-align: center;
-    margin-left: 0;
+    margin: 0;
+    padding: 0;
 }
 
 @media (max-width: 768px){
@@ -383,6 +384,25 @@ label{
 
     .searchCont {
         width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form{
+        width: 100%;
+        flex-direction: column;
+        border: 1px solid red;
+    }
+
+    .left{
+        width: 50%;
+        border: 1px solid red;
+        align-items: start;
+    }
+
+    .right{
+        width: 50%;
+        border: 1px solid red;
     }
 
 }
