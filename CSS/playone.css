@@ -139,10 +139,9 @@
   /*active day*/
   
   .ui-state-default:hover {
-    background: #a4bfd3;
+    background: #a5ceef;
     color: #ffffff;
-    border: 1px solid #6a7883;
-    border-radius: 99px;
+    border-radius: 0.5vw;
     position: relative;
     margin: -1px;
   }
@@ -374,6 +373,12 @@ label{
 @media (max-width: 768px){
     #calendar {
         width: 80%;
+    }
+
+    /* form */
+
+    .searchCont {
+        width: 70%;
     }
 
 }
