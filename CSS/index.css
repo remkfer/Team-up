@@ -899,6 +899,10 @@ a {
         font-size: clamp(8px,1vw,14px);
     }
 
+    .news1, .news2{
+        border: none;
+    }
+
     .news2, .news3{
         display: flex;
         flex-direction: column;
