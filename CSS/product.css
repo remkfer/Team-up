@@ -424,7 +424,7 @@ td{
     
 
     .description p{
-        /* width: 80vw; */
+        width: 80vw;
         font-size: clamp(10px,1vw,14px);
         padding: 2vw 0;
         line-height: 2;
@@ -432,7 +432,7 @@ td{
     }
 
     .description img{
-        width: 100%;
+        width: 80%;
         vertical-align: bottom;
         
     }
