@@ -255,45 +255,68 @@ nav ul{
 /* menu */
 
 #menu{
-    padding: 10px 12px;
-    color: #383838;
-    /* border: 1px solid #ffffff; */
-    /* border-radius: 50%; */
+    padding: 0 12px;
+    color: #003F6A;
 }
 
-.menu{
-    /* position: absolute; */
-    top: 100%;
+.nav{
+    position: relative;
 }
 
 .submenu{
     width: 20vw;
-    height: 55vh;
-    position: relative;
-    background-color: #fff;
-    /* padding: 1vw; */
+    height: 100%;
+    background-color: #eff9ff;
     position: absolute;
     top: 100%;
     right: 0;
-    height: 50vh;
+    height: 55vh;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s;
-
 } 
 
-.menu li{
-    padding: 3px 10px;
-}
 
 .submenu ul{
     display: flex;
     flex-direction: column;
+    padding: 0;
 }
 
 .submenu li a{
-    border: none;
-    color: #05273d;
+    color: #003F6A;
+}
+
+
+/* 展開 */
+.submenu.open-menu{
+    width: 20vw;
+    height: 55vh;
+    max-height: 100vh;
+    background-color: #edf8ff;
+}
+
+.subMenuLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submenu ul{
+    margin: 0 auto;
+}
+
+.subMenuLink:hover p{
+    font-weight: 500;
+}
+
+
+.subMenuLink span{
+    transition: transform 0.5s;
+}
+
+.subMenuLink:hover span{
+    transform: translateX(5px);
 }
 
 

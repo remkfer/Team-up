@@ -248,9 +248,13 @@
     .newsdt{
         width: 100%;
         display: flex;
+        justify-content: center;
         align-items: center;
         margin: 0 auto;
+        margin-top: 3vw;
     }
+
+    
 
     .newsdt span{
         font-size: clamp(7px, 1vw, 12px);
