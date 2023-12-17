@@ -8,7 +8,6 @@
     margin: 0 auto;
     margin-top: 7vw;
     align-items: center;
-    /* border: 1px solid red; */
 }
 
 .list ul{
@@ -46,12 +45,11 @@
 }
 
 
-
 .newslist .newsdt>span:last-child{
     width: 5vw;
     font-size: 0.8vw;
     font-weight: 400;
-    padding: 0.3vw 1vw;
+    padding: 0.1vw 0.5vw;
     margin-top: 6px;
     color: #fff;
     background-color: #FAB500;
@@ -61,13 +59,11 @@
 }
 
  .newsdt>span:first-child{
-    /* font-size: 1.5vw; */
     margin-right: 1vw;
 }
 
 .newsct{
     display: flex;
-    /* width: 50vw; */
 }
 
 .newsct .content{
@@ -269,6 +265,10 @@
         font-size: clamp(8px, 1vw, 14px);
         padding: 0.4vw 1.2vw;
         border-radius: 0.5vw;
+    }
+
+    .newslist .newsdt>span:last-child{
+        padding: 0.5vw 2vw;
     }
 
     .pagination{
