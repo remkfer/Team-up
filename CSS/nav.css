@@ -174,6 +174,133 @@ nav ul{
     transform: translateX(5px);
 }
 
+/* hereeeeeeeee */
+
+
+#navbar {
+    width: 100%;
+    height: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    background-color: rgb(255, 255, 255, 0.1);
+    transition: background-color 0.6s;
+}
+
+.logo img{
+    width: 15vw;
+    margin-left: 6.8vw;
+}
+
+.navlist{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 7vw;
+}
+
+
+nav ul{
+    display: flex;
+}
+
+.nav a {
+    color: #003F6A;
+    font-size: 13px;
+    transition: 1s;
+}
+
+.nav li{
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.link{
+    margin-right: -35px;
+}
+
+.link a{
+    color: #003F6A;
+    padding: 6px 15px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin-right: 1vw;
+}
+
+.link a:hover{
+    background-color: #fff;
+    color: #003F6A;
+}
+
+.linkicon ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.linkicon a{
+    padding: 6px 10px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 1vw;
+}
+
+.linkicon a:hover{
+    background-color: #fff;
+    color: #003F6A;
+}
+
+/* menu */
+
+#menu{
+    padding: 10px 12px;
+    color: #383838;
+    /* border: 1px solid #ffffff; */
+    /* border-radius: 50%; */
+}
+
+.menu{
+    /* position: absolute; */
+    top: 100%;
+}
+
+.submenu{
+    width: 20vw;
+    height: 55vh;
+    position: relative;
+    background-color: #fff;
+    /* padding: 1vw; */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    height: 50vh;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+
+} 
+
+.menu li{
+    padding: 3px 10px;
+}
+
+.submenu ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.submenu li a{
+    border: none;
+    color: #05273d;
+}
+
 
 @media screen and (max-width: 768px) {
     .nav {
