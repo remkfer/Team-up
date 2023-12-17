@@ -94,6 +94,7 @@
 }
 
 .footerbt{
+    background-color: #e8f6ff8f;
     padding: 1vw;
     display: flex;
     justify-content: center;
@@ -112,17 +113,7 @@
 }
 
 @media (max-width: 768px){
-
-    .contactform ul{
-        display: flex;
-        flex-direction: column;
-        
-    }
-
-    .contactform{
-        width: 100%;
-    }
-
+    
     .footer .social{ 
         display: flex;
         /* width: 100%; */
@@ -184,6 +175,64 @@
         font-size: clamp(8px, 1vw, 12px);
         
     }
+
+    /* 以下 */
+
+    .footertp{
+        flex-direction: column;
+    }
+
+    .address{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .footer img{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .contactform ul{
+        width: 100%;
+        align-items: center;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .contactform li a{
+        padding: 5vw 3vw;
+    }
+
+    .contactform li{
+        padding: 1vw 0;
+    }
+
+    .contactform ul li{
+        margin-right: 0;
+    }
+
+    .ctinfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+
+    .social{
+        /* order: 1; */
+        margin-top: 1vw;
+    }
+
+    .social li{
+        margin: 0;
+        padding: 0;
+        
+    }
+
+
+
 
     
 }
