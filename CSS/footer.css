@@ -217,18 +217,23 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 5vw;
         /* border: 1px solid red; */
     }
 
     .social{
-        /* order: 1; */
+        order: 1;
         margin-top: 1vw;
     }
 
     .social li{
         margin: 0;
-        padding: 0;
+        margin: 2.5vw 0;
         
+    }
+
+    .contactform{
+        display: none;
     }
 
 
