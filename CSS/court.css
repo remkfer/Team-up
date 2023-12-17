@@ -24,7 +24,7 @@ span{
 .location img{
     position: relative;
     vertical-align: middle;
-    margin-right: 7vw;
+    margin-right: 10vw;
     width: 23vw;
 }
 
@@ -58,19 +58,19 @@ span{
 .locationdt .court_A{
     position: absolute;
     top: 16%;
-    right: 35vw;
+    right: 30vw;
 }
 
 .locationdt .court_B{
     position: absolute;
     top: 32%;
-    right: 40vw;
+    right: 30vw;
 }
 
 .locationdt .court_C{
     position: absolute;
     top: 48%;
-    right: 35vw;
+    right: 30vw;
 }
 
 .location span{
