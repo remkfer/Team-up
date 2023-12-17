@@ -102,6 +102,7 @@
 
 .news1, .news2, .news3, .news4{
     display: flex;
+    justify-content: center;
     padding: 3vw 0;
     border-bottom: 1px solid rgb(208, 208, 208);
 }
@@ -145,38 +146,11 @@
     
 }
 
-/* news hover */
-/* .news1:hover{
-    background-image: linear-gradient(to right, #eafaff, #ffffff76 50%);
+.newslist{
+    margin: 0 auto;
 }
 
-.news3:hover{
-    background-image: linear-gradient(to right, #eafaff, #ffffff76 50%);
-}
 
-.news2:hover{
-    background-image: linear-gradient(to left, #eafaff, #ffffff76 50%);
-}
-
-.news4:hover{
-    background-image: linear-gradient(to left, #eafaff, #ffffff76 50%);
-} */
-
-
-/* @keyframes AnimeGrade{
-  0%{
-    background-position: 0% 50%
-  }
-  50%{
-    background-position: 100% 50%
-  }
-  100%{
-    background-position: 0% 50%
-  }
-} */
-
-
-/* 小於768px */
 @media screen and (max-width:768px) {
 
     .news{
