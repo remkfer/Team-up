@@ -201,14 +201,15 @@
     .title h1{
       font-size: clamp(16px,4vw,32px);
       display: flex;
-      margin-left: 4vw;
+      /* margin-left: 4vw; */
+      justify-content: center;
     }
 
     .top, .sock, .bottom{
       box-sizing: border-box;
       margin: 1vw 1vw;
-      width: 250px;
-      height: 300px;
+      width: 40vw;
+      height: 50vw;
       border: 0.1vw solid rgb(196, 196, 196);
       position: relative;
   }
@@ -216,7 +217,7 @@
     .all_btn a{
       writing-mode: vertical-lr ;
       font-size: clamp(14px,1vw,14px);
-      height: 300px;
+      height: 50vw;
       letter-spacing: 8px;
       text-align: center;
       color: white;
