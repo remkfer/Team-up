@@ -175,6 +175,7 @@
     .searchCont {
         width: 100%;
         margin-top: -10vw;
+        
     }
 
     .newslist{
@@ -184,6 +185,7 @@
         text-align: center;
         align-items: start;
         flex-wrap: wrap;
+        
     }
 
     .list li a{
@@ -191,11 +193,12 @@
     }
     
     .news1, .news2, .news3, .news4{
-        width: 35%;
+        width: 45%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 5vw 0 3vw;
+        margin: 5vw 1vw 3vw;
+        border:1px solid #FAB500;
     }
 
     .newsct{
@@ -266,6 +269,10 @@
         font-size: clamp(8px, 1vw, 14px);
         padding: 0.4vw 1.2vw;
         border-radius: 0.5vw;
+    }
+
+    .pagination{
+        margin-top: 0;
     }
    
 }
