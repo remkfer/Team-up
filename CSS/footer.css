@@ -43,7 +43,7 @@
 .social i{
     display: inline-block;
     color: #0d3854;
-    font-size: 26px;
+    font-size: 2vw;
     flex-direction: row-reverse;
     justify-items: end;
     padding-left: 0.25vw;
