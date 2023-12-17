@@ -199,7 +199,7 @@
     }
 
     .aboutContain p {
-        font-size: clamp(9px,1vw,12px);
+        font-size: clamp(8px,1vw,10px);
     }
 
     .aboutContain img{
@@ -213,7 +213,7 @@
     }
 
     .description p{
-        font-size: clamp(9px,1vw,12px);
+        font-size: clamp(8px,1vw,10px);
         width: 60%;
         text-align: center;
         margin-bottom: 12vw;
@@ -250,6 +250,10 @@
         margin: 0 auto;
         
         /* border: 1px solid red; */
+    }
+
+    .detail li{
+        font-size: clamp(7px ,1vw , 9px);
     }
 
     .detail{
@@ -324,9 +328,20 @@
         margin: 3vw 1.2vw;
     }
 
+    .marquee h2{
+        font-size: clamp(10px ,1vw , 12px);
+        margin-bottom: 0vw;
+    }
+
+    .marquee span{
+        font-size: clamp(7px ,1vw , 9px);
+        letter-spacing: 0.3vw;
+    }
+
+
     @keyframes marquee{
         0% {
-            transform: translateX(0);
+            transform: translateX(100);
           }
         100% {
             transform: translateX(-100%);
