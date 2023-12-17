@@ -1,15 +1,11 @@
 #navbar {
     height: 8vw;
     display: flex;
-    align-items: center;
-    align-self: center;
-    justify-content: space-between;
     position: fixed;
     z-index: 10;
     top: 0;
     background-color: rgb(255, 255, 255);
     transition: background-color 0.6s;
-    /* border: 1px solid red; */
 }
 
 .logo img{
@@ -32,7 +28,6 @@ nav ul{
     width: 1vw;
     height: 1vw;
     font-size: 1vw;
-    margin: 0 auto;
 }
 
 .nav li{
@@ -44,10 +39,10 @@ nav ul{
 .link a{
     font-size: 1vw;
     color: #003F6A;
-    padding: 1vw 1vw;
+    padding: 0.3vw 1vw;
     border: 1px solid #003F6A;
-    border-radius: 5px;
-    margin: 0.6vw;
+    border-radius: 0.5vw;
+    margin-right: 0.8vw;
     transition: 1s;
 }
 
@@ -57,12 +52,8 @@ nav ul{
 }
 
 .linkicon a{
-    padding: 6px 10px;
-    /* border: 1px solid #003F6A; */
-    border-radius: 50%;
     align-self: center;
     text-align: center;
-    margin: 8px;
     transition: 1s;
 }
 
@@ -71,57 +62,6 @@ nav ul{
     color: white;
 }
 
-
-/* #navbar.scrolled {
-    background-color: #003F6A;  滚動時的颜色 
-  } */
-
-
-/* banner */
-
-.banner img{
-    width: 100%;
-}
-
-.bannertext1{
-    position: absolute;
-    z-index: 1;
-    left: 90px;
-    top:150px;
-}
-
-.bannertext1 h1{
-    color: #fff;
-    letter-spacing: 3px;
-    line-height: 1.5;
-}
-
-.bannertext1 span{
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 40px;
-    color: #05273d;
-}
-
-.bannertext2{
-    position: absolute;
-    z-index: 1;
-    right: 90px;
-    bottom: 0;
-    text-align: end;
-}
-
-.bannertext2 h1{
-    color: #fff;
-    line-height: 1.5;
-}
-
-.bannertext2 span{
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 40px;
-    color: #05273d;
-}
-
-/*  */
 #navbar {
     width: 100%;
     height: 8vw;
@@ -136,40 +76,14 @@ nav ul{
 }
 
 
-.navlist{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-right: 7vw;
-}
-
-
-nav ul{
-    display: flex;
-}
-
 .nav a {
     color: #003F6A;
-    font-size: 13px;
     transition: 1s;
 }
 
-.nav li{
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-}
 
 .link{
-    margin-right: -35px;
-}
-
-.link a{
-    color: #003F6A;
-    padding: 0.3vw 1vw;
-    border: 1px solid #003F6A;
-    border-radius: 5px;
-    margin-right: 1vw;
+    margin-right: -45px;
 }
 
 .link a:hover{
@@ -177,20 +91,15 @@ nav ul{
     color: #fff;
 }
 
-.linkicon ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+/* .linkicon ul{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; 
+} */
 
 .linkicon a{
-    padding: 6px 10px;
-    /* border: 1px solid #003F6A; */
-    border-radius: 50%;
-    align-self: center;
-    align-items: center;
-    text-align: center;
-    margin-right: 1vw;
+    padding: 100% 1vw;
+    border-radius: 0px;
 }
 
 .linkicon a:hover{
@@ -201,64 +110,55 @@ nav ul{
 /* menu */
 
 #menu{
-    padding: 10px 12px;
+    padding: 0 12px;
     color: #003F6A;
-    /* border: 1px solid #ffffff; */
-    /* border-radius: 50%; */
 }
 
-.menu{
-    /* position: absolute; */
-    top: 100%;
+.nav{
+    position: relative;
 }
 
 .submenu{
-    width: 15vw;
-    position: relative;
+    width: 20vw;
+    height: 100%;
     background-color: #eff9ff;
-    /* padding: 1vw; */
     position: absolute;
     top: 100%;
     right: 0;
-    /* width: 13vw; */
-    height: 100vh;
+    height: 55vh;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s;
-
 } 
 
-.menu li{
-    padding: 3px 2vw;
-}
 
 .submenu ul{
     display: flex;
     flex-direction: column;
+    padding: 0;
 }
 
 .submenu li a{
-    border: none;
     color: #003F6A;
 }
 
 
 /* 展開 */
 .submenu.open-menu{
-    width: 15vw;
-    max-height: 45vh;
+    width: 20vw;
+    height: 55vh;
+    max-height: 100vh;
     background-color: #edf8ff;
 }
 
 .subMenuLink{
     display: flex;
     align-items: center;
-    margin: 0 auto;
+    justify-content: center;
 }
 
 .submenu ul{
     margin: 0 auto;
-    margin-left: 35vw;
 }
 
 .subMenuLink:hover p{
@@ -282,6 +182,18 @@ nav ul{
         width: 100%;
     }
 
+    .link{
+        display: none;
+    }
+
+    .linkicon li {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+
+
 
     .linkicon li i{
         font-size: clamp(10px,1vw,14px);
@@ -294,21 +206,39 @@ nav ul{
         font-size: clamp(11px,1vw,14px);
     }
 
+    #menu i{
+        padding: 0;
+    }
+
     .submenu {
         width: 100vw;
+        height: 100vh;
     }
 
     .submenu.open-menu{
         width: 100vw;
+        height: 100vh;
+    }
+
+    #menu{
+        padding: 0;
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 100%;
+        margin-top: 0.9vw;
+        margin-left: 1vw;
     }
 
 
+    .linkicon li{
+        width: 100%;
+        height: 100%;
+    }
+
     .navlist a{
         font-size: clamp(11px,1vw,14px);
-        padding: 0;
-        padding: 0.6vw 1vw;      
-        border: none; 
-        margin: 0;
+        border: none;
+        
     }
 
     .navlist a:hover{
