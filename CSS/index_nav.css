@@ -94,7 +94,8 @@ nav ul{
 }
 
 .submenu{
-    width: 15vw;
+    width: 20vw;
+    height: 55vh;
     position: relative;
     background-color: #fff;
     /* padding: 1vw; */
@@ -125,7 +126,8 @@ nav ul{
 
 /* 展開 */
 .submenu.open-menu{
-    width: 15vw;
+    width: 20vw;
+    height: 55vh;
     max-height: 100vh;
     background-color: rgb(255, 255, 255);
 }
@@ -177,18 +179,20 @@ nav ul{
         padding: 0;
         padding: 0.6vw 2.5vw;    
         border: none;  
-        justify-content: end; 
+        justify-content: center;
     }
     .navlist a:hover{
         background-color: transparent;
     }
 
     .submenu {
-        width: 50vw;
+        width: 100vw;
+        height: 100vh;
     }
 
     .submenu.open-menu{
-        width: 50vw;
+        width: 100vw;
+        height: 100vh;
     }
 
 }
