@@ -102,7 +102,7 @@
     
                 <div class="password">
                     <label for="login_password">密碼&nbsp&nbsp</label>
-                    <input type="password" placeholder="*******" class="login_password"><img src="./img/hidepassword.png" alt="">
+                    <input type="password" placeholder="*******" id="psw" class="login_password"><img id="hide" onclick="hideShowPsw()"  src="./img/visible.png" alt="">
                     
                 </div>
                 </form>
@@ -118,6 +118,21 @@
             </div>
         </div>
     </div>  
+
+    <!-- 密碼顯示 -->
+    <!-- <script>
+        var hide = document.getElementById("hide");
+        var psw = document.getElementById("psw");
+        function hideShowPsw(){
+            if (psw.type == "password") {
+                psw.type = "text";
+                hide.src = "./hidepassword.png";
+            }else {
+                psw.type = "password";
+                hide.src = "./visible.png";
+            }
+        }
+    </script> -->
 
     <script src="./JS/nav_menu.js"></script>
 </body>
