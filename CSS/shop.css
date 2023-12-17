@@ -1,12 +1,11 @@
 .product_side_list{
     margin-left: 90px;
-  
     position: fixed;
 }
 
 
 .product img{
-    width: 20vw;
+    width: 100%;
     vertical-align: bottom;
 }
 
@@ -14,24 +13,24 @@
 .product{
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
+    margin-top: 9vw;
 }
 
-.tops, .bottoms, .socks {
+.product .tops, .product .bottoms, .product .socks {
     width: 900px;
     height: 500px;
     display: flex;
     flex-direction: column;
     align-self: end;
-    margin-bottom: 80px;
+    margin-bottom: 5vw;
     position: relative;
 }
 
-.topsList, .bottomsList, .socksList{
+.product .topsList, .product .bottomsList, .product .socksList{
     display: flex;
 }
 
-.tops1, .tops2, .tops3{
+.product .top, .product .bottom,.product .sock{
     position: relative;
     margin: 0px 20px ;
     width: 250px;
@@ -40,40 +39,32 @@
 }
 
 
-.productName{
-    margin-top: 60px;
-}
-
-.bottom1, .bottom2, .bottom3{
+.product .bottom{
     position: relative;
-    margin: 0px 20px;
+    margin: 20px;
     width: 250px;
     height: 300px;
     border: 1px solid rgb(196, 196, 196);
 }
 
-.bottomsList img{
-    width: 220px;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-left: 15px;
+
+.product .bottoms .productName{
+  margin-top: 5vw;
 }
 
-.bottoms .productName{
-    margin-top: 80px;
-}
 
-.tops i, .bottoms i{
+
+.product .tops i, .product .bottoms i{
     position: absolute;
     right: -42px;
 }
 
-.socks i{
+.product .socks i{
     position: absolute;
     right: -100px;
 }
 
-.sock1, .sock2, .sock3{
+.product .sock{
     margin: 20px;
     width: 250px;
     height: 300px;
@@ -111,7 +102,7 @@
     align-items: center;
 }
 
-.all_btn a{
+.product .all_btn a{
     font-size: 14px;
     color: white;
     background-color: #003F6A;
@@ -124,16 +115,6 @@
 }
 
 
-/* hover圖放大 */
-/* .tops1, .tops2, .tops3, .bottom1, .bottom2, .bottom3,.sock1, .sock2, .sock3{
-    overflow: hidden;
-  } */
-
-
-  /* .bottom1, .bottom2, .bottom3{
-    overflow: hidden;
-  } */
-
   img{
     transition: .5s;
   }
@@ -144,42 +125,18 @@
     object-fit: cover;
   }
 
-  .tops1:hover img{
-    transform: scale(1.1);
-  }
-
-  .tops2:hover img{
+  .top:hover img{
     transform: scale(1.05);
   }
 
-  .tops3:hover img{
-    transform: scale(1.05);
-  }
- 
-  .bottom1:hover img{
+  .bottom:hover img{
     transform: scale(1.05);
   }
 
-  .bottom2:hover img{
+  .sock:hover img{
     transform: scale(1.05);
   }
   
-  .bottom3:hover img{
-    transform: scale(1.05);
-  }
-
-  .sock1:hover img{
-    transform: scale(1.05);
-  }
-  
-  .sock2:hover img{
-    transform: scale(1.05);
-  }
-  
-  .sock3:hover img{
-    transform: scale(1.05);
-  }
-
   .productmq{
     display: none;
   }
@@ -194,13 +151,30 @@
       display: block;
     }
 
+    * {
+      position: static;
+    }
 
     .product_side_list{
-      position: relative;
-      margin: 0 auto;
+      margin: 0;
+      padding: 0;
+      position: static;
       display: flex;
       flex-direction: column;
       margin-top: 12vw;
+    }
+
+    .product_side_list h1{
+      margin: 0 auto;
+    }
+
+    .product_side_list ul{
+      padding: 0;
+      margin: 0 auto;
+    }
+
+    .tops img, .bottoms img, .socks img{
+      width: 100%;
     }
 
     .product_side_list h1{
@@ -219,36 +193,46 @@
       font-size: clamp(10px,1vw,14px);
     }
 
-    .product img{
-      width: 20vw;
-      
+
+    .topsList, .bottomsList, .socksList{
+      display: flex;
     }
 
-    .tops1, .tops2, .tops3,.bottom1, .bottom2, .bottom3, .sock1, .sock2, .sock3{
-      margin: 0 auto;
-      width: 30vw;
-      margin: 0 2vw;
+    .title h1{
+      font-size: clamp(16px,4vw,32px);
+      display: flex;
+      justify-content: center;
     }
 
-    .tops, .bottoms, .socks{
-      margin: 0 auto;
-    }
+    .top, .sock, .bottom{
+      margin: 20px;
+      width: 250px;
+      height: 300px;
+      border: 1px solid rgb(196, 196, 196);
+      position: relative;
+  }
 
-    .product{
-      margin-top: 0.6vw;
-    }
+    .all_btn a{
+      writing-mode: vertical-lr ;
+      font-size: clamp(14px,1vw,14px);
+      height: 302px;
+      letter-spacing: 8px;
+      text-align: center;
+      color: white;
+      background-color: #003F6A;
+      border: none;
+      margin-top: 3vw;
+      margin-right: 3vw;
+      padding: 0 2vw ;
+      border-radius: 0.5vw;
+  }
 
-    .product h1{
-      font-size: clamp(18px,2vw,20px);
-      letter-spacing: 2px;
-      margin-bottom: 4vw;
-    }
+  .productName span{
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(12px, 1vw,14px);
+}
 
-    .productSize, .all_btn{
-      display: none;
-    }
 
-    span {
-      font-size: clamp(12px,2vw,16px);
-    }
+
   }
