@@ -188,13 +188,12 @@
     margin: 0 auto;
     display: flex;
     color: #003F6A;
-    flex-direction: column;border: 0.1vw solid #003F6A;
+    flex-direction: column;
+    align-items: center;
+    border: 0.1vw solid #003F6A;
     border-radius: 0.5vw;
     font-family: 'Noto Sans TC', sans-serif;
 }
-
-
-
 .form{
     display: flex;
     justify-content: space-around;
@@ -235,9 +234,9 @@ input, select{
     display: flex;
 }
 
-.picknum input{
-    border: none;
+.picknum>input{
     border-bottom: 0.1vw solid #003F6A;
+    width: 15vw;
 }
 
 label{
@@ -278,17 +277,16 @@ label{
 }
 
 .submit input{
-    display: flex;
-    align-self: center;
     margin: 2.5vw auto 0;
     background-color: #003F6A;
     color: white;
-    font-size: 1vw;
-    padding: 0.6vw 2vw;
-    border: none;
+    font-size: 1.5vw;
+    padding: 10px;
     border-radius: 0.3vw;
-    text-align: center;
-    align-items: center;
+}
+
+.searchCont ul{
+    padding: 0;
 }
 
 .picktime select{
@@ -319,12 +317,10 @@ label{
 .rent input{
     border: none;
     border-bottom: 0.1vw solid #003F6A;
-    width: 10vw;
 }
 
 .rent .left{
     margin: 0 auto;
-    /* align-items: start; */
 }
 
 .rent .dateinput{
@@ -367,7 +363,10 @@ label{
 .rent .submit input{
     text-align: center;
     margin: 0;
-    padding: 0;
+}
+
+.right{
+    margin-left: 30px;
 }
 
 @media (max-width: 768px){
@@ -379,7 +378,6 @@ label{
 
     .searchCont {
         width: 80%;
-        display: flex;
         flex-direction: column;
     }
 
@@ -388,28 +386,29 @@ label{
         flex-direction: column;
     }
 
-    .left{
-        width: 50%;
-        align-items: start;
-    }
-
     .right{
-        width: 50%;
+        margin-left: 0px;
     }
 
-}
+    .form{
+        align-items: flex-start;
+    }
 
 
-.pickcourt, .pickdate, .picknum{
-    /* display: flex;
-    /* border: 1px solid red; */
-    /* width: 100%;
-    gap: 20px; */
 }
 
-.searchCont{
-    border: 1px solid red;
-}
 .searchCont div{
     display: flex;
+}
+
+.rent{ 
+    width: 60vw;
+}
+.rent>div>div{
+    display: flex;
+    width: 100%;
+}
+
+.submit{
+    justify-content: center;
 }
