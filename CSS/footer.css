@@ -130,7 +130,15 @@
         display: flex;
         justify-content: center;
         margin: 0 auto;
+        margin-top: 2vw;
         margin-bottom: 2vw;
     }
 
+    .footerbt{
+        border: none;
+    }
+
+    .copyright{
+        margin-bottom: 2vw;
+    }
 }
